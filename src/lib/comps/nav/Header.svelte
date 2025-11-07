@@ -1,6 +1,17 @@
+<script lang="ts">
+	type Props = {
+		variant?: 'default' | 'transparent';
+	};
+	const { variant = 'default' }: Props = $props();
+	const backgroundImage = variant === 'transparent' ? null : '/background-auth.jpg';
+</script>
+
 <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
-<header class="absolute top-0 right-0 left-0 z-50">
+<header
+	class="absolute top-0 right-0 left-0 z-50 bg-cover bg-center"
+	style={backgroundImage ? `background-image: url('{backgroundImage}')` : ''}
+>
 	<nav
 		aria-label="Global"
 		class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
