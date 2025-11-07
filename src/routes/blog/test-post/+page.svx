@@ -1,0 +1,22 @@
+---
+title: A test blog post
+author: Dr. Fabuloso the Fabulous
+layout: blog
+tag: Organizing
+darken_image: true
+image: https://images.unsplash.com/photo-1761839257287-3030c9300ece?ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070
+description: In this post, I’ll show how easy it is to integrate markdown in SvelteKit with `mdsvex`.
+author_avatar: https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80
+
+---
+
+This is my first blog post created with **mdsvex** and **SvelteKit**
+
+## Introduction
+
+ Here's a simple list of cool things we can do:
+
+- Markdown inside `.svx` files
+- Tailwind CSS for styling
+- SvelteKit for routing and SSR
+- And much more!
