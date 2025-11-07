@@ -9,7 +9,7 @@
 	import Pricing from '$lib/comps/content/Pricing.svelte';
 </script>
 
-<Header />
+<Header variant="transparent" />
 
 <PrimaryFeatures />
 <Mission />
