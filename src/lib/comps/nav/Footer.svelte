@@ -28,7 +28,7 @@
 								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Guides</a>
 							</li>
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Blog</a>
+								<a href="/blog/test-post" class="text-sm/6 text-gray-400 hover:text-white">Blog</a>
 							</li>
 							<li>
 								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Developers</a>
