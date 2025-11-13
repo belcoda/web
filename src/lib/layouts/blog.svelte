@@ -8,7 +8,7 @@
 		date: string;
 		description: string;
 		author_avatar: string;
-		author_title: string;
+		author_title?: string;
 		tag: string;
 		image?: string;
 		darken_image?: boolean;
@@ -49,14 +49,29 @@
 		<h1 class="text-4xl font-extrabold tracking-tight text-balance text-white">{title}</h1>
 		<!-- Date and Author -->
 		<div class="mt-1 flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-200">
-			<time datetime="2020-03-10" class="mr-8">Mar 10, 2020</time>
+			<time datetime={date} class="mr-8"
+				>{new Date(date).toLocaleDateString('en-US', {
+					year: 'numeric',
+					month: 'long',
+					day: 'numeric'
+				})}</time
+			>
 			<div class="-ml-4 flex items-center gap-x-4">
 				<svg viewBox="0 0 2 2" class="-ml-0.5 size-0.5 flex-none fill-white/50">
 					<circle r="1" cx="1" cy="1" />
 				</svg>
-				<div class="flex gap-x-2.5">
-					<img src={author_avatar} alt="" class="size-6 flex-none rounded-full bg-white/10" />
-					{author}
+				<div class="flex items-center gap-x-2.5">
+					<img
+						src={author_avatar}
+						alt="{author} avatar"
+						class="size-8 flex-none rounded-full bg-white/10"
+					/>
+					<div>
+						<div class="font-medium">{author}</div>
+						{#if author_title}
+							<div class="-mt-1 text-gray-200/70">{author_title}</div>
+						{/if}
+					</div>
 				</div>
 			</div>
 		</div>

@@ -26,6 +26,6 @@
 	</div>
 </div>
 
-<div class="mx-auto prose mt-12 mb-20 max-w-5xl px-4">{@render children?.()}</div>
+<div class="prose mx-auto mt-12 mb-20 max-w-5xl px-4">{@render children?.()}</div>
 
 <Footer />
