@@ -1,0 +1,217 @@
+---
+title: Organizing
+description: Everything wa
+layout: content
+
+---
+
+# Community: Know Who You're Organizing With
+
+A people management system built for organizers who need to understand relationships, not just store contact information. Track engagement, recognize patterns, and stay connected to the humans behind the data.
+
+## Overview
+
+Community organizing lives in the details: who attended which events, who's connected to whom, what matters to each person. Belcoda's community module treats these details as the foundation of effective organizing rather than administrative overhead.
+
+The system adapts to how you already think about your community. Search by name, filter by participation patterns, group by affinity or geography. Tag people with the labels that make sense for your work. Every interaction—event signup, message exchange, group membership change—enriches the profile automatically, building context over time without manual data entry.
+
+---
+
+## Rich Profile Management
+
+### Comprehensive Contact Information
+
+Each person's profile captures everything you need to stay connected: email addresses, phone numbers, physical addresses, and preferred communication channels. But it also tracks verification status—whether someone's confirmed their email, verified their phone number, or connected via WhatsApp—so you know which channels are actually working.
+
+Profiles include standard fields for organizational context: who they work for, their position, what groups they belong to, who their point of contact is within your organization. Social media links connect digital presence to real-world participation. Custom fields let you track whatever matters to your specific organizing context—skills, availability, interests, languages spoken beyond the primary preference.
+
+The system respects consent clearly. Email and phone subscription status appear prominently, alongside a "do not contact" flag that's honored across all communications. You'll never accidentally message someone who's opted out.
+
+### Edit in Place, Save Automatically
+
+Profile editing feels lightweight. Click a pencil icon, change what needs changing, click save. Or cancel—nothing's permanent until you confirm. Forms validate as you type, catching errors before you submit. Field-level permissions ensure people can only edit what they should.
+
+Profile pictures upload directly, with automatic optimization. Status fields let you add free-text context that makes sense for your work—"attending regional meeting," "interested in phone banking," whatever helps your team coordinate.
+
+---
+
+## Advanced Search and Filtering
+
+### Find People By How You Think About Them
+
+The search system understands organizing logic. Type a name, see matches. Type an email address, find that person. Type numbers, search phone records. No need to specify "search by name" or "search by email"—the system infers intent from what you type.
+
+But the real power emerges with prefix-based filtering. Type `tag:volunteer` to see everyone with the volunteer tag. Type `event:attended` to find people who've actually shown up, not just signed up. Type `age:young_adult` for demographic targeting. Combine filters with AND/OR logic: people who attended events *and* live in a specific region, or who have *any* of several tags.
+
+### Filters That Match Your Mental Model
+
+The system supports fifteen distinct filter types:
+
+**Demographic filters**: Age groups, languages, countries, regions, gender
+**Engagement filters**: Event signups, attendance, no-shows across different timeframes
+**Organizational filters**: Tags, groups, administrative roles, WhatsApp group membership
+**Communication filters**: Email subscription status, phone subscription status, verified contacts
+**Relationship filters**: Point person (who's managing this person), group membership with admin status
+
+Each filter type searches the actual database in real-time, showing suggestions as you type. See thirty potential matches, select the ones that matter, refine further. The dropdown updates instantly as data changes—new events appear in event filters, new tags in tag filters.
+
+### Temporal Filtering
+
+Engagement filters understand time. Find people who signed up for events in the past thirty days, ninety days, six months, or past year. Find recent attendees or identify people who've stopped participating. These temporal patterns often reveal more than static attributes.
+
+### Smart Search Without Typing Prefixes
+
+If you don't remember the prefix system, just type what you're looking for. The search interprets context:
+- Text with @ symbol → searches emails
+- All numbers → searches phone numbers
+- Text without special characters → searches names, events, groups, tags
+
+Results appear grouped by type, so you can quickly identify whether you found a person, a group, or an event.
+
+---
+
+## Activity Timeline
+
+### See the Full Story
+
+Every person's profile includes a complete activity timeline: messages sent and received, events attended, tags added and removed, group memberships changed. The timeline scrolls infinitely backward, loading twenty items at a time, newest first.
+
+Each activity type renders distinctly. WhatsApp messages show the actual message content—text, images, audio, video—with delivery status (sent, delivered, read, failed). Email notifications appear with subject lines. Event signups link to the event details. Tag additions and removals name the tag and timestamp the change.
+
+Activities aren't just logs—they're navigable. Click a tag name to view the tag. Click an event to see event details. Click a group to view membership. The timeline becomes a map of someone's engagement with your organizing work.
+
+### Track Communication Across Channels
+
+The timeline integrates email and WhatsApp equally. See when someone received an event reminder via email and when they replied via WhatsApp. See when automated messages were delivered and whether they were read. Emoji reactions appear inline, showing how people responded to messages.
+
+For WhatsApp specifically, the system tracks message status granularly: pending, sent, delivered, read, failed. When messages fail, the timeline shows why. When they succeed, you see exactly when they were delivered and read.
+
+---
+
+## Tags and Groups
+
+### Organize By What Matters
+
+Tags are lightweight labels you can create on the fly. Create "volunteer," "leadership," "donor," "invited_to_training"—whatever categories help you segment and communicate. Tags appear on profiles as chips, easily scannable. Add multiple tags to any person, remove tags just as easily.
+
+The tag system enforces workspace uniqueness but allows organic growth. Start with a few core tags, add more as your organizing work evolves. Archive tags that are no longer useful. Filter your entire community by tag combinations to create targeted lists for events or communications.
+
+### Groups for Structure
+
+While tags are informal, groups provide structure. Groups can represent geographic chapters, working committees, affinity groups, or administrative divisions. Each group has members and admins—admins can manage membership and settings, regular members just participate.
+
+Groups support hierarchies. Create parent-child relationships to mirror your organizational structure. A regional group might have multiple local groups beneath it, each with its own membership and leadership.
+
+People can belong to multiple groups simultaneously, reflecting the reality that individuals often participate in multiple parts of an organization. Group membership appears on profiles with admin status clearly marked. Add or remove people from groups directly from their profile, or manage bulk membership from the group page.
+
+---
+
+## Point Person System
+
+### Distributed Management
+
+Large communities need distributed responsibility. The point person system lets you assign a contact person to each community member—someone who's responsible for that relationship, who can make decisions about communications and engagement.
+
+Point people unlock permission scoping. Group organizers can manage people they're point person for, even if they're not workspace administrators. This enables local leadership without requiring centralized approval for every action.
+
+The system tracks point person assignments as part of the profile, visible to anyone viewing the person. Assignments can change as organizing relationships evolve. Default assignments can be configured during person creation, streamlining onboarding.
+
+---
+
+## List Views and Discovery
+
+### Scan Your Community
+
+The community list combines people, groups, and WhatsApp groups in one unified view, visually distinguished by color-coded rings. Infinite scroll loads twelve items at a time as you scroll, keeping the interface responsive even with thousands of records.
+
+Sort by most recently updated to see who's been active. Filter by type to focus on just people, just groups, or just WhatsApp groups. Search to narrow down by name or identifier. The list updates in real-time as data changes—new signups appear without refreshing, status changes reflect immediately.
+
+Each list item shows the avatar, name, status (for people), and how long ago the record was updated. Time formatting adapts to locale and recency: "2 hours ago," "yesterday," "3 weeks ago." These temporal cues help you identify stale records or recent activity at a glance.
+
+---
+
+## Import and Integration
+
+### Bulk Creation
+
+CSV import handles initial database population or regular synchronization with external systems. Upload a CSV, map columns to person fields, and let the queue processor handle the rest. The system tracks import progress: total rows, processed rows, failed rows. Failed entries include error details so you can correct and retry.
+
+Imports are workspace-scoped and track who initiated them. Import history provides an audit trail of when and how records entered your database.
+
+### External IDs
+
+The external ID field supports integration with other platforms. Store IDs from your previous CRM, your event registration system, your donation platform. Use external IDs to match records during import or to synchronize updates bidirectionally.
+
+---
+
+## Custom Fields
+
+### Adapt to Your Context
+
+Every organizing context is different. Some organizations need to track language skills, others dietary restrictions, others professional expertise. Rather than forcing a one-size-fits-all schema, Belcoda lets you define custom fields at the workspace level.
+
+Create text fields for free-form input, number fields for quantities, date fields for important dates, boolean fields for yes/no attributes. Create select fields with predefined options, or multi-select fields when people need multiple choices. Label each field clearly, mark fields as optional or required.
+
+Custom fields integrate fully with the rest of the system. They appear in profile forms, in list views (optionally), and in data exports. Filter by custom field values using the search system. The fields are flexible without being chaotic—workspace-level schema definition ensures consistency across your team.
+
+---
+
+## Permissions and Access Control
+
+### Granular Control
+
+Not everyone needs to see everything. Belcoda's permission system supports multiple tiers:
+
+**Owners** have unrestricted access—they created the workspace or were granted ownership rights.
+**Admins** can manage most resources but can't change ownership or billing.
+**Group admins** can manage people and communications within their assigned groups.
+**Point persons** can manage people they're assigned as contact for.
+**Regular users** can view information but not edit.
+
+These permissions cascade logically. If you can edit a person, you can view their full profile. If you can manage a group, you can add or remove members. The system doesn't require manual permission assignment for every action—it infers appropriate access from roles and relationships.
+
+---
+
+## Real-Time Sync
+
+### See Changes Immediately
+
+Belcoda uses Rocicorp Zero for real-time database synchronization. When someone signs up for an event, their profile updates immediately in your open browser tab. When a colleague adds a tag, you see it without refreshing. When activity happens, the timeline extends automatically.
+
+This real-time sync eliminates the coordination overhead of "did you refresh?" conversations. Multiple organizers can work simultaneously without stepping on each other's changes. The system handles conflict resolution automatically, prioritizing the most recent write.
+
+Debounced updates prevent excessive re-rendering. Search inputs wait 200 milliseconds after your last keystroke before querying. Form auto-saves wait 300 milliseconds after your last edit. These small delays create fluidity without lag.
+
+---
+
+## Data Quality
+
+### Prevent Duplicates
+
+The system searches for existing records during event signups and imports. Match by email first, then phone number. If a match exists, update the existing profile rather than creating a duplicate. This matching happens automatically, reducing manual de-duplication work.
+
+### Verification Status
+
+Track which contact methods are actually valid. Email verification happens through confirmation links. Phone verification happens through WhatsApp handshake. The system marks verification status clearly on profiles, so you know which channels are reliable.
+
+Unverified contacts aren't blocked—people can still be in your database with unverified information—but the status helps you prioritize reliable channels for important communications.
+
+### Soft Deletes
+
+Records are never truly deleted from the database. Instead, they're marked with a `deletedAt` timestamp and filtered from queries. This soft delete pattern preserves audit trails and allows recovery if someone was deleted by mistake.
+
+Deleted records don't appear in standard views or exports, but administrators can access them if needed. The system tracks who deleted records and when, providing accountability.
+
+---
+
+## Mobile Experience
+
+Every interface works on mobile devices. Profile editing, search, filtering, activity timelines—all designed for thumb navigation. Modal dialogs adapt to small screens. Infinite scroll works with touch gestures. Forms validate on mobile without desktop-specific interaction patterns.
+
+This mobile-first design acknowledges that organizers often work from their phones: checking attendance at events, updating statuses in the field, responding to messages on the go. The system doesn't punish mobile use with degraded functionality.
+
+---
+
+Community management in Belcoda isn't about storing contacts—it's about understanding relationships. The tools reveal patterns: who's engaged, who's dropped off, who's connected to whom. They make segmentation intuitive: find people by how they participate, not just by static demographics. And they respect the humans in the database: honoring opt-outs, tracking consent, showing the full story of engagement rather than reducing people to spreadsheet rows.
+
+Whether you're managing fifty people or five thousand, the system scales without adding complexity. Small organizations get lightweight tools that don't demand administrative overhead. Large organizations get sophisticated filtering and delegation that prevent bottlenecks. Both get real-time sync, comprehensive activity tracking, and interfaces designed for humans doing organizing work.

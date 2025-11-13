@@ -1,0 +1,278 @@
+---
+title: WhatsApp
+description: Everything wa
+layout: content
+
+---
+
+# Communications: Reach People Where They Are
+
+Send email and WhatsApp messages that arrive when they matter, reach the right people, and respect how your community wants to be contacted. No marketing automation complexity—just thoughtful communication tools for organizers.
+
+## Overview
+
+Organizing requires reaching people at the right time with the right message. Belcoda's communications module handles both email and WhatsApp messaging through one unified interface, with sophisticated recipient filtering and transparent cost tracking.
+
+The system recognizes that different messages need different channels. Event reminders might work via email for some communities, WhatsApp for others. Quick updates might need the immediacy of WhatsApp. Long-form appeals might benefit from email formatting. Belcoda supports both channels equally, letting you choose based on what works rather than what the tool supports.
+
+---
+
+## Email Communications
+
+### Rich Message Composition
+
+Email messages are built using a block-based editor that supports paragraphs, headers, images, lists, and embedded media. The editor produces clean HTML that renders consistently across email clients. No wrestling with raw HTML or fighting template systems—just write content with appropriate formatting tools.
+
+Subject lines and preview text sit alongside the body editor. Preview text can auto-generate from your body content (stripping HTML, taking the first 150 characters), or you can override with custom text. Lock preview text when you've crafted it carefully and don't want auto-generation to change it later.
+
+Attachments are supported in the infrastructure, ready for future implementation when you need to send PDFs, images, or documents alongside messages.
+
+### Multiple Sender Identities
+
+Configure multiple "from" signatures per workspace. Each signature includes a sender name, email address, reply-to address, and return path domain for bounce handling. Send messages from different identities depending on context: general announcements from one address, event invitations from another, urgent alerts from a third.
+
+Email signatures track verification status. The system confirms that domains are properly authenticated with DKIM and SPF records, ensuring deliverability. Unverified signatures still work, but verified ones improve inbox placement significantly.
+
+Reply-to addresses can differ from sender addresses, routing responses to the right place. If you send from a no-reply address but want replies to go to an organizer, set the reply-to accordingly. The system handles the routing.
+
+### Test Before Sending
+
+Send test emails to yourself or specific people before launching a full campaign. Select a recipient from your database or enter a custom email address. Tests use the same rendering pipeline as real sends, so you see exactly what recipients will see—formatting, images, personalization, everything.
+
+Test emails arrive within seconds. Review subject lines, check preview text in your inbox, click links to verify they work. Iterate until the message is right, then send with confidence.
+
+---
+
+## WhatsApp Communications
+
+### Template-Based Messaging
+
+WhatsApp's business messaging requires pre-approved templates for outbound messages. Belcoda manages the full template lifecycle: creation, submission to WhatsApp for approval, webhook-based status updates, and selection for use in campaigns.
+
+Templates consist of components:
+
+**Headers** can be text or images. Text headers support one parameter for personalization. Image headers let you upload a cover image that appears at the top of the message.
+
+**Body text** is the main message content, supporting up to ten parameters for personalization. Use `{{1}}`, `{{2}}`, etc. as placeholders, then provide actual values when sending. Parameters let you personalize messages at scale: names, locations, event details, custom data from profiles.
+
+**Buttons** create interactive elements. Quick reply buttons let recipients respond with predefined options. Buttons can trigger actions: send another message, sign up for an event, check event status. Each button includes a payload that routes back to your system when clicked.
+
+### Template Approval Workflow
+
+Creating a template is quick—name it, select a language, define components. But using it requires WhatsApp's approval:
+
+1. **Create**: Draft your template in Belcoda's interface
+2. **Submit**: Send it to WhatsApp for review via API
+3. **Wait**: Approval typically takes hours to days (WhatsApp's timeline)
+4. **Webhook**: WhatsApp notifies Belcoda of approval/rejection status
+5. **Use**: Once approved, templates appear in your campaign builder
+
+The system tracks template status clearly: NOT_SUBMITTED, PENDING, APPROVED, REJECTED. Only approved templates can be used in campaigns. Rejected templates include rejection reasons from WhatsApp, helping you understand what needs changing.
+
+System templates are pre-built, pre-approved templates ready to use immediately. Custom templates give you flexibility for specific use cases.
+
+### Multi-Message Sequences
+
+WhatsApp campaigns can include multiple messages sent in sequence to the same recipients. Create a welcome message followed by detail messages. Send an announcement followed by action items. Each message in the sequence can use a different template, different parameters, different buttons.
+
+Messages are sent in order, with minimal delay between them. Recipients experience them as a flowing conversation rather than isolated notifications. Drag and drop to reorder messages before sending. Edit each message's parameters independently.
+
+---
+
+## Recipient Targeting
+
+### Filter-Based Audience Selection
+
+Both email and WhatsApp messages use the same advanced filtering system as the community module. Build audiences by combining filters:
+
+**Include people who**:
+- Have specific tags
+- Belong to certain groups
+- Attended (or signed up for) specific events
+- Live in particular regions
+- Match demographic criteria
+- Have custom field values
+
+**Exclude people who**:
+- Have other tags
+- Belong to other groups
+- Match criteria you want to avoid
+
+Combine filters with AND/OR logic. Find people who attended Event A *and* have Tag B, or who belong to Group C *or* live in Region D. The system evaluates complex filter combinations efficiently, returning counts in seconds.
+
+### Real-Time Recipient Counts
+
+As you adjust filters, the system recalculates recipient counts automatically. See exactly how many people will receive your message before you send. The count respects subscription status and "do not contact" flags—if someone's opted out, they're excluded from the count and won't receive the message.
+
+Debouncing prevents excessive recalculation. The count updates 300 milliseconds after your last filter change, balancing responsiveness with server load.
+
+### Subscription and Consent
+
+Email campaigns only reach people who:
+- Have an email address
+- Have `emailAddressSubscribed` set to true
+- Don't have `doNotContact` flag set
+
+WhatsApp campaigns only reach people who:
+- Have a phone number
+- Have `phoneNumberSubscribed` set to true
+- Don't have `doNotContact` flag set
+
+These checks happen automatically during recipient calculation. You can't accidentally message people who've opted out. The system enforces consent at the query level, not as a manual step.
+
+---
+
+## Draft Management
+
+### Auto-Save and Iteration
+
+Communication drafts auto-save as you work. Edit the subject line, wait 300 milliseconds, it saves. Add a paragraph to the body, wait, it saves. Change recipient filters, wait, it saves. No manual save button to remember, no lost work from browser crashes.
+
+Drafts persist until you explicitly delete them or trigger sending. Return to drafts days or weeks later, pick up where you left off. The most recent three drafts appear in a sidebar for quick access. Older drafts remain accessible through the full draft list.
+
+Search drafts by subject line (for email) or template name (for WhatsApp). Filter by creation date or update date. Sort by most recently modified to find what you were just working on.
+
+### Message Cloning
+
+Create variants of successful messages by cloning. Select a sent message, choose "clone," and a new draft appears with all content copied. Edit the clone as needed—change recipient filters, adjust wording, update send timing. Send to a different audience or iterate on messaging approach.
+
+Cloning preserves the structure and content but resets statistics. The clone is a new message with its own ID, recipient count, and delivery tracking.
+
+---
+
+## Sending and Queue Processing
+
+### Batch Processing
+
+When you trigger a send, the system builds a queue of individual recipient tasks. Email recipients are batched in groups of twenty-five (matching Postmark's batch send limits). WhatsApp recipients are similarly batched for efficient API usage.
+
+Each recipient gets a queue entry with status tracking: pending, sent, failed, skipped. The queue processor picks up pending entries, attempts delivery, updates status, records results. If delivery fails, the system logs the error message and increments a retry counter.
+
+Queue processing uses database-level locks to prevent duplicate sends. Multiple workers can process the same message's queue without sending the same recipient twice. `FOR UPDATE SKIP LOCKED` ensures that locked entries are skipped by concurrent workers.
+
+### Progress Tracking
+
+Campaign statistics update in real-time:
+- `estimatedRecipientCount`: How many people matched filters
+- `successfulRecipientCount`: How many messages delivered successfully
+- `failedRecipientCount`: How many delivery attempts failed
+
+These counts let you monitor campaign progress. See when sending begins (`startedAt`), when it completes (`completedAt`), and how long it took. Track success rates to identify deliverability issues or infrastructure problems.
+
+---
+
+## WhatsApp Cost Management
+
+### Transparent Pricing
+
+WhatsApp charges per message, with rates varying by recipient country. Belcoda tracks costs at the fraction-of-a-cent level, storing values in hundredths of cents to avoid rounding errors.
+
+Before sending, the system calculates estimated cost:
+1. Parse recipient phone numbers to determine countries
+2. Look up per-message rate for each country
+3. Multiply rate × recipient count
+4. Store as `estimatedCost`
+
+After sending, actual costs are tracked as `totalCost`. The difference reveals discrepancies—failed messages, skipped recipients, rate changes.
+
+### Balance Enforcement
+
+Workspaces have a credit balance tracked in hundredths of cents. Before building a send queue, the system checks whether `workspace.balance >= message.estimatedCost`. If insufficient credits exist, the send is blocked with a clear error message.
+
+After successful sends, the workspace balance decrements by actual cost. This balance tracking prevents surprise bills and forces intentional allocation of messaging budget.
+
+### Rate Card
+
+Country-specific rates are stored in a rate card mapping country codes to marketing message prices. Rates reflect WhatsApp's published pricing for business messaging. The system accounts for rate changes by storing them with effective dates (infrastructure prepared, not yet fully implemented in UI).
+
+---
+
+## Delivery Tracking
+
+### Status Monitoring
+
+Email delivery tracking relies on Postmark's infrastructure. Each email gets a unique Message ID that links to Postmark's delivery logs. The system records this ID for reference but doesn't pull delivery status back into Belcoda automatically.
+
+WhatsApp delivery tracking is more granular. Each message receives a WAMID (WhatsApp Message ID) from the API. Webhooks notify Belcoda of status changes: sent → delivered → read, or sent → failed. These status updates appear in activity timelines and queue status fields.
+
+Failed messages include failure reasons: invalid phone number, user blocked the number, template not approved, network error. These details help diagnose problems and clean contact lists.
+
+### Activity Integration
+
+Every communication creates activity records in recipient profiles. Sent emails appear as `outgoing_email_message` activities. Sent WhatsApp messages appear as `outgoing_whatsapp_message` activities. The activity timeline shows message content, send time, delivery status, and links to the original campaign.
+
+This integration means you never lose context. Looking at a person's profile, you see every message they've received, when they received it, and whether it was delivered successfully. No cross-referencing campaign reports—the information lives where you need it.
+
+---
+
+## Sent Message History
+
+### Campaign Archive
+
+All sent messages remain accessible in the communications module. Browse by send date, search by subject or template, filter by channel (email or WhatsApp). Each sent message shows:
+
+- Subject/template name
+- Recipient count (estimated and actual)
+- Success/failure breakdown
+- Send timestamps
+- Creator/sender
+
+Click into a sent message to see full details: body content, recipient filters, queue status breakdown, cost (for WhatsApp). The archive provides accountability and reference—you can always verify what was sent, to whom, and when.
+
+---
+
+## Settings and Configuration
+
+### WhatsApp Business Account
+
+Connect your WhatsApp Business API account by providing your WABA ID and phone number. Belcoda uses these credentials to send messages and receive webhooks. Account configuration happens at the workspace level—all WhatsApp messages from a workspace use the same business account.
+
+Template submission and webhook processing require API tokens (YCloud integration). These tokens authenticate Belcoda with WhatsApp's infrastructure, enabling template review and delivery status updates.
+
+### Email Configuration
+
+Configure return path domains for bounce handling. When recipients mark emails as spam or their addresses bounce, these responses route to your return path domain. Proper configuration prevents bounces from damaging your sender reputation.
+
+Email signature verification ensures deliverability. The system checks DNS records for DKIM and SPF authentication, marking signatures as verified when properly configured. Use verified signatures for important campaigns to maximize inbox placement.
+
+---
+
+## Technical Foundation
+
+### Queue Infrastructure
+
+Both email and WhatsApp use pg-boss (PostgreSQL-based job queue) for reliable processing. Jobs persist in the database, survive server restarts, support retries, and provide visibility into processing status.
+
+Queue handlers run as background workers, picking up pending tasks and processing them in batches. The queue scales horizontally—add more workers to process campaigns faster. Database locks prevent duplicate processing across workers.
+
+### Real-Time Updates
+
+Draft auto-save uses debounced reactive updates. Edit a field, the update triggers 300ms later. Multiple rapid edits coalesce into a single save operation. The system tracks save status visually ("Saving..." → "Saved"), so you know when changes have persisted.
+
+Recipient counts recalculate reactively when filters change. The system debounces these calculations (300ms) to prevent excessive database queries. The result: responsive UI without overwhelming the server.
+
+---
+
+## Best Practices Enforced
+
+### Prevent Empty Broadcasts
+
+The system prevents sending to zero recipients. If filters return an empty result set, sending is blocked. This prevents accidental "send to everyone" scenarios caused by filter configuration errors.
+
+### Require Filters
+
+Email and WhatsApp campaigns require explicit filter configuration. There's no "send to all" button. You must define who receives the message using include/exclude filters. This forces intentionality and prevents broad unintended sends.
+
+### Respect Opt-Outs
+
+"Do not contact" flags are enforced at the database query level. Opted-out people never appear in recipient calculations, never receive messages, never increment send statistics. The enforcement is automatic and consistent across all communication types.
+
+### Track Everything
+
+Every send creates audit trails: queue entries, activity records, campaign statistics. You can always answer "who received this message?" and "when was this person last contacted?" The system prioritizes accountability over convenience.
+
+---
+
+Communications in Belcoda are designed for organizers who value precision and respect. Target exactly the right audience using sophisticated filters. Send through the channel that makes sense for your community. Track delivery transparently. Honor opt-outs automatically. And maintain a complete audit trail of what was sent, to whom, and when.
+
+The tools are powerful without being complex. Create a message, filter your audience, send. The system handles delivery logistics, cost calculation, status tracking, and activity logging. You focus on message content and audience selection—the parts that require human judgment.

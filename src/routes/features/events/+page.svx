@@ -1,0 +1,199 @@
+---
+title: Events
+description: Everything wa
+layout: content
+
+---
+# Events: Bring Your Community Together
+
+Thoughtfully designed event management that connects with how your community actually communicates. Whether you're organizing a local meeting, a virtual workshop, or a regional gathering, Belcoda's event tools help you reach people, track participation, and stay connected—without the complexity.
+
+## Overview
+
+Belcoda Events bridges the gap between digital organizing and real-world connection. Create event pages that work across channels, send automated communications that arrive when they matter, and track participation in ways that enrich your community understanding—not just fill spreadsheets.
+
+The system recognizes that different communities communicate differently. Some prefer email, others WhatsApp. Some need detailed registration forms, others want frictionless signup via QR code. Belcoda adapts to your community's communication patterns rather than forcing them to adapt to your tools.
+
+---
+
+## Event Pages That Welcome Everyone
+
+### Beautiful, Accessible Public Pages
+
+Each event gets its own clean, mobile-optimized page that puts the important details front and center: what's happening, when, where, and how to join. Feature images draw attention. Descriptions can include rich formatting for context and instructions. Address information renders clearly, and virtual meeting links are automatically detected and displayed with platform logos.
+
+Signup forms collect exactly what you need—nothing more. Choose from standard fields like address, date of birth, and organization, or create custom fields specific to your event. Ask dietary preferences for a community meal. Collect skill levels for a workshop. Gather accessibility needs for an in-person gathering. Every field can be marked as optional or required, giving you flexibility without overwhelming participants.
+
+The system handles capacity elegantly. Set a maximum number of signups, and the counter updates in real-time, creating gentle urgency without pressure. When someone signs up, they're immediately recognized if they're already in your community database—no need to re-enter information they've provided before.
+
+### Instant Calendar Integration
+
+One-click calendar export means your event appears in people's personal calendars. Timezone support ensures everyone knows when to show up, regardless of where they're located. The "Add to Calendar" button works with all major calendar applications, reducing the mental overhead of remembering event details.
+
+---
+
+## WhatsApp Integration: Meet People Where They Are
+
+### QR Code Signup
+
+For communities that live on WhatsApp, event registration doesn't need to mean filling out web forms. Generate a WhatsApp QR code that people can scan at meetings, print on flyers, or share in group chats. One scan opens WhatsApp with your event information pre-filled, ready to send.
+
+When someone responds, Belcoda automatically creates their profile—capturing their phone number, verifying it, and marking them as a WhatsApp subscriber. If they're already in your database, their existing profile is updated and the signup recorded. It's seamless discovery: the system finds people by phone number or creates new profiles as needed, all without manual data entry.
+
+The WhatsApp flow respects consent. People who sign up via WhatsApp are automatically subscribed to WhatsApp communications, reflecting how they've chosen to engage with your community.
+
+### WhatsApp Check-In
+
+For in-person events, generate a separate check-in QR code. Place it at your venue entrance, and attendees can confirm their arrival with a quick scan. Status updates happen instantly in your database, giving you real-time attendance visibility without clipboards or manual roll calls.
+
+### Share Without Friction
+
+Copy WhatsApp links directly from the platform and paste them anywhere: in broadcast messages, group chats, or one-on-one conversations. The links carry all the event context, so recipients understand what they're signing up for before they commit.
+
+---
+
+## Automated Communications That Feel Timely, Not Automated
+
+### Confirmation Messages
+
+When someone signs up, they receive immediate confirmation—if you've enabled it. The confirmation email includes all event details, formatted cleanly for reference. It arrives in their preferred language, drawn from their profile or your workspace defaults.
+
+Confirmations respect the "do not contact" flag. If someone has opted out of communications, the system honors that preference automatically.
+
+### Intelligent Reminders
+
+Set reminders to go out one day, three days, a week before your event—whatever timing makes sense for your community. The system tracks what's been sent to prevent duplicates, even if you adjust reminder timing after some messages have already gone out.
+
+Reminders include the same full event context as confirmations: location, time, how to join. For virtual events, the meeting link is prominent. For in-person events, the full address renders clearly. Calendar integration links appear again, for people who didn't add it the first time.
+
+The reminder system is timezone-aware, calculating "24 hours before" based on the event's location, not your server's clock. International communities get accurate timing.
+
+### Cancellation Notifications
+
+When plans change, notify all confirmed attendees with a single action. The system tracks who's been notified to prevent repeated cancellation messages if you need to make multiple updates to the event record.
+
+Cancellations use the same email template as reminders, maintaining visual consistency while clearly communicating the change. Activity logs track every notification sent, giving you an audit trail of who was informed and when.
+
+---
+
+## Attendee Management That Informs Strategy
+
+### Real-Time Attendance Tracking
+
+View your signup list as it grows. Filter by status: who's confirmed, who's cancelled, who actually attended. Search by name or email. Each attendee links back to their full profile in your community database, so you see signup information alongside their broader engagement history.
+
+After events, update statuses to reflect reality. Mark who attended, who didn't show. This data flows back into your CRM, enriching your understanding of participation patterns over time.
+
+### Export on Your Terms
+
+Download attendee lists as CSV with configurable columns. Include standard fields—name, email, phone—or add event-specific custom fields. The export respects your selections from the detailed attendee view, so you can create different exports for different purposes: a simple headcount, a detailed follow-up list, or a mailing list for post-event surveys.
+
+Multi-select custom fields export as comma-separated values. Dates format consistently. Boolean fields convert to clear "Yes" / "No" labels. The export is designed for immediate use in spreadsheets or import into other tools—no post-processing required.
+
+### Visual Attendee Lists
+
+Toggle between quick view (names and status) and detailed view (all fields). Print mode creates clean, paper-friendly lists for physical events. Mobile drawers make attendee management work on phones, not just desktop computers.
+
+---
+
+## Integration With Your Community Database
+
+### Seamless CRM Connection
+
+Every signup updates your community database intelligently. If someone's email matches an existing profile, their record is updated with new information from the signup form—no duplicate profiles created. If they're new to your community, a complete profile is created automatically.
+
+The system makes smart decisions about what to update. It won't overwrite existing data with blank fields, but it will add missing information. Someone signs up with their phone number for the first time? That's added to their profile. They provide their organization? That's captured too.
+
+### Rich Activity Tracking
+
+Every interaction creates an activity record: the signup itself, confirmation emails sent, reminders delivered, cancellations notified. These activities appear in each person's profile timeline, giving you full context when you're looking at an individual's engagement history.
+
+Activity tracking includes the full event context—event title, date, location—so you can understand what someone participated in without cross-referencing multiple systems.
+
+### Contact Preference Honoring
+
+People who sign up via email are marked as email subscribers. People who sign up via WhatsApp are marked as WhatsApp subscribers. These preferences flow through to future communications, ensuring you reach people on their preferred channel.
+
+The "do not contact" flag is respected universally. If someone has opted out, automated event communications won't reach them—even if they're on the attendee list.
+
+---
+
+## Event Lifecycle Management
+
+### Draft and Publish Workflow
+
+Create events in draft mode while you finalize details. Preview exactly how the public page will look before you share it. When you're ready, publish with one click—the public URL becomes active immediately.
+
+Published events can be unpublished if you need to make significant changes. The system doesn't penalize iteration.
+
+### Archive for Posterity
+
+After events conclude, archive them to keep your active event list focused. Archived events remain in your database with all signup information intact—they're just hidden from your main event list. Unarchive anytime if you need to reference details or export attendee lists later.
+
+### Status Indicators
+
+Visual indicators show draft, published, archived, and cancelled events at a glance. Filter your event list by status to focus on what matters right now.
+
+---
+
+## Customization and Flexibility
+
+### Event-Specific Fields
+
+Not every event needs the same information. A community meal might need dietary restrictions. A skills workshop might need experience level. A physical mobilization might need emergency contact information.
+
+Create custom fields per event, choosing from text, number, date, boolean, single-select, or multi-select formats. Label them clearly. Mark them as required or optional. Custom fields appear in the signup form, in attendee lists, and in CSV exports—fully integrated with your standard field set.
+
+### Communication Preferences
+
+Toggle signup confirmations on or off per event. Set reminder timing to match your community's patterns—a week's notice for weekend events, 24 hours for weeknight gatherings. Choose whether to display timezone information on public pages, helpful for distributed communities but potentially cluttering for local-only events.
+
+Every event can specify its preferred communication channel, helping you route notifications appropriately across email and WhatsApp.
+
+### Capacity Control
+
+Set maximum signup numbers for space-limited events, or leave it unlimited for virtual gatherings. The counter updates automatically, and the public page displays availability clearly. When capacity is reached, signups can be closed automatically (if configured).
+
+---
+
+## Event Discovery
+
+### Search and Filter
+
+Find events in your database by title, date, or month. View events on a calendar for visual planning. Filter to see only upcoming events, or include archived events for historical analysis.
+
+Full-text search across event titles helps you locate specific gatherings quickly, even in organizations with dozens of events per month.
+
+### Event Cards
+
+Clean event cards show essential information at a glance: title, date, location, signup count. Cards link to detailed views where you can manage settings, view attendees, or access the public signup page.
+
+---
+
+## Technical Foundation
+
+### Real-Time Updates
+
+Belcoda Events uses Rocicorp Zero for real-time data synchronization. When someone signs up, your dashboard updates immediately—no page refresh required. When you update event details, the public page reflects changes within seconds.
+
+### Reliable Email Delivery
+
+Email communications use Postmark for reliable delivery. Messages are templated, branded to your workspace, and localized to recipient languages. Reply-to addresses can be customized per workspace, ensuring responses reach the right organizers.
+
+### Mobile-First Design
+
+Event pages, signup forms, and admin views work beautifully on mobile devices. Most people will access your event page from their phone—the interface is designed for that reality.
+
+---
+
+## Privacy and Consent
+
+Event signups respect individual privacy preferences. People can sign up without receiving automated communications if they're marked "do not contact." Phone numbers and emails are verified through signup channels, establishing clear consent paths.
+
+All event data lives in your community database, not scattered across external platforms. You maintain complete control over who can access attendee information and how it's used.
+
+---
+
+Events in Belcoda are designed for organizers who respect their communities. The tools handle complexity behind the scenes—automated messages, timezone calculations, duplicate prevention—so you can focus on creating meaningful gatherings. Whether you're bringing together five people or five hundred, the system scales without adding cognitive load.
+
+Simple to start. Powerful when you need it. Connected to the rest of your community data, so every event strengthens your understanding of who you're organizing with and how to reach them effectively.
