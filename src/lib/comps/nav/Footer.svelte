@@ -12,16 +12,24 @@
 						<h3 class="text-sm/6 font-semibold text-white">Features</h3>
 						<ul role="list" class="mt-6 space-y-4">
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Organizing</a>
+								<a href="/features/organizing" class="text-sm/6 text-gray-400 hover:text-white"
+									>Organizing</a
+								>
 							</li>
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">WhatsApp</a>
+								<a href="/features/whatsapp" class="text-sm/6 text-gray-400 hover:text-white"
+									>WhatsApp</a
+								>
 							</li>
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Events</a>
+								<a href="/features/events" class="text-sm/6 text-gray-400 hover:text-white"
+									>Events</a
+								>
 							</li>
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Campaigns</a>
+								<a href="/features/campaigns" class="text-sm/6 text-gray-400 hover:text-white"
+									>Campaigns</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -29,19 +37,32 @@
 						<h3 class="text-sm/6 font-semibold text-white">Resources</h3>
 						<ul role="list" class="mt-6 space-y-4">
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Guides</a>
+								<a
+									href="https://support.belcoda.com/docs"
+									target="_blank"
+									class="text-sm/6 text-gray-400 hover:text-white">Documentation</a
+								>
 							</li>
 							<li>
-								<a href="/blog/test-post" class="text-sm/6 text-gray-400 hover:text-white">Blog</a>
+								<a
+									href="https://belcoda.readme.io"
+									target="_blank"
+									class="text-sm/6 text-gray-400 hover:text-white">Developers</a
+								>
 							</li>
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Developers</a>
+								<a
+									href="https://support.belcoda.com/roadmap"
+									target="_blank"
+									class="text-sm/6 text-gray-400 hover:text-white">Roadmap</a
+								>
 							</li>
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Support</a>
-							</li>
-							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Roadmap</a>
+								<a
+									href="https://support.belcoda.com/changelog"
+									target="_blank"
+									class="text-sm/6 text-gray-400 hover:text-white">Changelog</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -51,16 +72,17 @@
 						<h3 class="text-sm/6 font-semibold text-white">Company</h3>
 						<ul role="list" class="mt-6 space-y-4">
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">About</a>
+								<a href="/about" class="text-sm/6 text-gray-400 hover:text-white">About</a>
 							</li>
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Blog</a>
+								<a href="/blog" class="text-sm/6 text-gray-400 hover:text-white">Blog</a>
 							</li>
 							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Jobs</a>
-							</li>
-							<li>
-								<a href="#" class="text-sm/6 text-gray-400 hover:text-white">Media</a>
+								<a
+									href="https://belcoda.notion.site/Careers-78f34ed4508d46f69a92e5fea15a7e19"
+									target="_blank"
+									class="text-sm/6 text-gray-400 hover:text-white">Careers</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -73,7 +95,11 @@
 								>
 							</li>
 							<li>
-								<a href="/security" class="text-sm/6 text-gray-400 hover:text-white">Security</a>
+								<a
+									href="https://belcoda.notion.site/Security-2aa23474e3b3809485cfda8ee892331e?source=copy_link"
+									target="_blank"
+									class="text-sm/6 text-gray-400 hover:text-white">Security</a
+								>
 							</li>
 							<li>
 								<a href="/terms-of-service" class="text-sm/6 text-gray-400 hover:text-white"
