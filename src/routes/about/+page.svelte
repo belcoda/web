@@ -145,10 +145,18 @@
 							Everyone working to make the world a better place should have the software they need
 							to succeed.
 						</p>
-						<p class="mt-10 max-w-xl text-base/7 text-gray-400">
-							Belcoda was built to support a new generation of organizing.
+						<p class="mt-6 max-w-xl text-base/7 text-gray-400">
+							Belcoda was built to support a new generation of organizing. It's designed for any
+							language, on any device, with any internet connection, in any country.
 						</p>
-						<SpeedMonitor />
+						<p class="mt-4 max-w-xl text-base/7 text-gray-400">
+							Belcoda was built to support a new generation of organizing. It's designed for any
+							language, on any device, with any internet connection, in any country.
+						</p>
+						<p class="mt-4 max-w-xl text-base/7 text-gray-400">
+							Belcoda was built to support a new generation of organizing. It's designed for any
+							language, on any device, with any internet connection, in any country.
+						</p>
 					</div>
 					<div class="lg:flex lg:flex-auto lg:justify-center">
 						<dl class="w-64 space-y-8 xl:w-80">
