@@ -47,7 +47,7 @@
 						</p>
 						<p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
 							Our goal is 0ms response time for 99% of actions, even on slow connections.
-							<a href="/infrastructure" class="text-blue-800 hover:underline">Learn how</a>.
+							<a href="/" class="text-blue-800 hover:underline">Learn how</a>.
 						</p>
 					</div>
 					<div class="mt-8 w-full px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">

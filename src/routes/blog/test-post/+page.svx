@@ -1,6 +1,7 @@
 ---
 title: A test blog post
 author: Dr. Fabuloso the Fabulous
+slug: test-post
 layout: blog
 tag: Organizing
 darken_image: true

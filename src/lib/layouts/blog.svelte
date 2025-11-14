@@ -6,6 +6,7 @@
 		title: string;
 		author: string;
 		date: string;
+		slug: string;
 		description: string;
 		author_avatar: string;
 		author_title?: string;
@@ -20,6 +21,7 @@
 		date,
 		description,
 		author_avatar,
+		slug,
 		author_title,
 		tag,
 		image,
@@ -88,7 +90,7 @@
 </div>
 
 <div class="mx-auto mb-20 max-w-[65ch] px-4">
-	<div class="mt-6 mb-8"><BlogBreadcrumbs {title} href={`/blog/${slugify(title)}`} /></div>
+	<div class="mt-6 mb-8"><BlogBreadcrumbs {title} href={`/blog/${slug}`} /></div>
 	<div class="prose prose-lg max-w-[65ch]">
 		{@render children?.()}
 	</div>

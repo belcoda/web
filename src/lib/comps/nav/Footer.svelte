@@ -27,8 +27,8 @@
 								>
 							</li>
 							<li>
-								<a href="/features/campaigns" class="text-sm/6 text-gray-400 hover:text-white"
-									>Campaigns</a
+								<a href="/features/actions" class="text-sm/6 text-gray-400 hover:text-white"
+									>Actions</a
 								>
 							</li>
 						</ul>
