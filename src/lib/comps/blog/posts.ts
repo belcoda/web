@@ -36,4 +36,9 @@ export type Post = {
 	tag: (typeof tags)[number];
 };
 
+export function getPosts(count: number = 25) {
+	const sortedPosts = posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+	return sortedPosts.slice(0, count);
+}
+
 export default posts;
