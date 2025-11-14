@@ -1,3 +1,7 @@
+<script lang="ts">
+	import SpeedMonitor from '$lib/comps/widgets/SpeedMonitor.svelte';
+</script>
+
 <div class="-mt-20 bg-gray-50 pt-12 pb-40">
 	<div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
 		<div class="grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
@@ -45,14 +49,8 @@
 							<a href="/infrastructure" class="text-blue-800 hover:underline">Learn how</a>.
 						</p>
 					</div>
-					<div
-						class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2"
-					>
-						<img
-							src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-performance.png"
-							alt=""
-							class="w-full max-lg:max-w-xs"
-						/>
+					<div class="mt-8 w-full px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+						<SpeedMonitor />
 					</div>
 				</div>
 				<div
@@ -114,8 +112,15 @@
 									<div class="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
 								</div>
 							</div>
-							<div class="px-6 pt-6 pb-14">
+							<div class="px-6 pt-6 pb-14 font-mono text-white">
 								<!-- Your code example -->
+								<code>
+									<pre><span class="text-blue-500">import</span> {`{Belcoda} from '@belcoda/sdk'`}; 
+<span class="text-blue-500">const</span> belcoda = <span class="text-green-500">new</span
+										> {`Belcoda({`}<span class="text-blue-500">apiKey</span>: <span
+											class="text-yellow-500">'your-api-key'</span
+										><span class="text-gray-500">,</span>{`})`};</pre>
+								</code>
 							</div>
 						</div>
 					</div>
