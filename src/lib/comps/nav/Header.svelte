@@ -8,8 +8,6 @@
 	import Resources from './flyouts/Resources.svelte';
 </script>
 
-<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
 <header
 	class="absolute top-0 right-0 left-0 z-50 bg-cover bg-center"
 	style={backgroundImage ? `background-image: url('{backgroundImage}')` : ''}
@@ -27,7 +25,7 @@
 		<div class="hidden lg:flex lg:gap-x-12">
 			<Features open={false}>Features</Features>
 			<a
-				href="#"
+				href="/about"
 				class="rounded-md px-3 py-2 text-sm/6 font-semibold text-blue-50 hover:bg-gray-100/10 hover:text-white"
 				>About</a
 			>
