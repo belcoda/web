@@ -10,6 +10,6 @@
 	<title>Belcoda</title>
 </svelte:head>
 
-<main class="h-screen">
+<main class="min-h-screen bg-gray-50">
 	{@render children?.()}
 </main>
