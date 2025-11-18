@@ -3,6 +3,8 @@
 	import Footer from '$lib/comps/nav/Footer.svelte';
 	import Header from '$lib/comps/nav/Header.svelte';
 	import CTA1 from '$lib/comps/content/CTA1.svelte';
+
+	import PricingGridItem from './PricingGridItem.svelte';
 </script>
 
 <Header />
@@ -13,13 +15,13 @@
 				<h2
 					class="mx-auto max-w-4xl text-center text-5xl font-semibold tracking-tight text-balance text-white sm:text-6xl"
 				>
-					Pricing that grows with you
+					Free. Forever. For everyone.
 				</h2>
 				<p
 					class="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty text-gray-400 sm:text-xl/8"
 				>
-					Choose an affordable plan that’s packed with the best features for engaging your audience,
-					creating customer loyalty, and driving sales.
+					Belcoda is free for everyone. Paid plans include additional features designed for networks
+					and institutions.
 				</p>
 				<div class="mt-16 flex justify-center">
 					<fieldset aria-label="Payment frequency">
@@ -83,7 +85,7 @@
 							id="tier-tier-starter"
 							class="text-sm/6 font-semibold text-white group-data-featured/tier:text-gray-900"
 						>
-							Starter
+							Grassroots
 						</h3>
 						<div
 							class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch"
@@ -92,34 +94,18 @@
 								<p
 									class="text-4xl font-semibold tracking-tight text-white group-not-has-[[name=frequency][value=monthly]:checked]/tiers:hidden group-data-featured/tier:text-gray-900"
 								>
-									$19
+									Free
 								</p>
 								<p
 									class="text-4xl font-semibold tracking-tight text-white group-not-has-[[name=frequency][value=annually]:checked]/tiers:hidden group-data-featured/tier:text-gray-900"
 								>
-									$199
+									$0
 								</p>
-								<div class="text-sm">
-									<p class="text-white group-data-featured/tier:text-gray-900">USD</p>
-									<p
-										class="text-gray-400 group-not-has-[[name=frequency][value=monthly]:checked]/tiers:hidden group-data-featured/tier:text-gray-500"
-									>
-										Billed monthly
-									</p>
-									<p
-										class="text-gray-400 group-not-has-[[name=frequency][value=annually]:checked]/tiers:hidden group-data-featured/tier:text-gray-500"
-									>
-										Billed annually
-									</p>
-								</div>
 							</div>
-							<button
-								type="submit"
-								name="tier"
-								value="tier-starter"
-								aria-describedby="tier-tier-starter"
+							<a
+								href="http://app.belcoda.com/signup"
 								class="w-full rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white not-group-data-featured:inset-ring not-group-data-featured:inset-ring-white/5 group-data-featured/tier:bg-indigo-600 group-data-featured/tier:shadow-xs hover:bg-white/20 group-data-featured/tier:hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/75 group-data-featured/tier:focus-visible:outline-indigo-600"
-								>Buy this plan</button
+								>Get started</a
 							>
 						</div>
 						<div class="mt-8 flow-root sm:mt-10">
@@ -127,54 +113,11 @@
 								role="list"
 								class="-my-2 divide-y divide-white/5 border-t border-white/5 text-sm/6 text-white group-data-featured/tier:divide-gray-900/5 group-data-featured/tier:border-gray-900/5 group-data-featured/tier:text-gray-600 lg:border-t-0"
 							>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Custom domains
-								</li>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Edge content delivery
-								</li>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Advanced analytics
-								</li>
+								<PricingGridItem>Unlimited contacts, users & teams</PricingGridItem>
+								<PricingGridItem>3 admins accounts</PricingGridItem>
+								<PricingGridItem>All organizing features</PricingGridItem>
+								<PricingGridItem>Integrations & API</PricingGridItem>
+								<PricingGridItem>Community support</PricingGridItem>
 							</ul>
 						</div>
 					</div>
@@ -188,7 +131,7 @@
 							id="tier-tier-scale"
 							class="text-sm/6 font-semibold text-white group-data-featured/tier:text-gray-900"
 						>
-							Scale
+							Institution
 						</h3>
 						<div
 							class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch"
@@ -197,12 +140,12 @@
 								<p
 									class="text-4xl font-semibold tracking-tight text-white group-not-has-[[name=frequency][value=monthly]:checked]/tiers:hidden group-data-featured/tier:text-gray-900"
 								>
-									$99
+									$179
 								</p>
 								<p
 									class="text-4xl font-semibold tracking-tight text-white group-not-has-[[name=frequency][value=annually]:checked]/tiers:hidden group-data-featured/tier:text-gray-900"
 								>
-									$999
+									$1,799
 								</p>
 								<div class="text-sm">
 									<p class="text-white group-data-featured/tier:text-gray-900">USD</p>
@@ -224,7 +167,7 @@
 								value="tier-scale"
 								aria-describedby="tier-tier-scale"
 								class="w-full rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white not-group-data-featured:inset-ring not-group-data-featured:inset-ring-white/5 group-data-featured/tier:bg-indigo-600 group-data-featured/tier:shadow-xs hover:bg-white/20 group-data-featured/tier:hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/75 group-data-featured/tier:focus-visible:outline-indigo-600"
-								>Buy this plan</button
+								>Subscribe</button
 							>
 						</div>
 						<div class="mt-8 flow-root sm:mt-10">
@@ -232,102 +175,11 @@
 								role="list"
 								class="-my-2 divide-y divide-white/5 border-t border-white/5 text-sm/6 text-white group-data-featured/tier:divide-gray-900/5 group-data-featured/tier:border-gray-900/5 group-data-featured/tier:text-gray-600 lg:border-t-0"
 							>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Custom domains
-								</li>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Edge content delivery
-								</li>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Advanced analytics
-								</li>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Quarterly workshops
-								</li>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Single sign-on (SSO)
-								</li>
-								<li class="flex gap-x-3 py-2">
-									<svg
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										data-slot="icon"
-										aria-hidden="true"
-										class="h-6 w-5 flex-none text-gray-500 group-data-featured/tier:text-indigo-600"
-									>
-										<path
-											d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-									Priority phone support
-								</li>
+								<PricingGridItem>All free features</PricingGridItem>
+								<PricingGridItem>25 admin accounts</PricingGridItem>
+								<PricingGridItem>Custom domains</PricingGridItem>
+								<PricingGridItem>Email & page templates</PricingGridItem>
+								<PricingGridItem>Email & live chat support</PricingGridItem>
 							</ul>
 						</div>
 					</div>
@@ -340,7 +192,7 @@
 							id="tier-tier-growth"
 							class="text-sm/6 font-semibold text-white group-data-featured/tier:text-gray-900"
 						>
-							Growth
+							Network
 						</h3>
 						<div
 							class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch"
@@ -349,34 +201,18 @@
 								<p
 									class="text-4xl font-semibold tracking-tight text-white group-not-has-[[name=frequency][value=monthly]:checked]/tiers:hidden group-data-featured/tier:text-gray-900"
 								>
-									$49
+									Get in touch
 								</p>
 								<p
 									class="text-4xl font-semibold tracking-tight text-white group-not-has-[[name=frequency][value=annually]:checked]/tiers:hidden group-data-featured/tier:text-gray-900"
 								>
-									$499
+									Get in touch
 								</p>
-								<div class="text-sm">
-									<p class="text-white group-data-featured/tier:text-gray-900">USD</p>
-									<p
-										class="text-gray-400 group-not-has-[[name=frequency][value=monthly]:checked]/tiers:hidden group-data-featured/tier:text-gray-500"
-									>
-										Billed monthly
-									</p>
-									<p
-										class="text-gray-400 group-not-has-[[name=frequency][value=annually]:checked]/tiers:hidden group-data-featured/tier:text-gray-500"
-									>
-										Billed annually
-									</p>
-								</div>
 							</div>
-							<button
-								type="submit"
-								name="tier"
-								value="tier-growth"
-								aria-describedby="tier-tier-growth"
+							<a
+								href="https://cal.com/django-merope-8wwjmi/belcoda-network-exploration-call"
 								class="w-full rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white not-group-data-featured:inset-ring not-group-data-featured:inset-ring-white/5 group-data-featured/tier:bg-indigo-600 group-data-featured/tier:shadow-xs hover:bg-white/20 group-data-featured/tier:hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/75 group-data-featured/tier:focus-visible:outline-indigo-600"
-								>Buy this plan</button
+								>Get in touch</a
 							>
 						</div>
 						<div class="mt-8 flow-root sm:mt-10">
