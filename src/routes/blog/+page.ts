@@ -1,7 +1,8 @@
-import posts from '$lib/comps/blog/posts.js';
+import { getPosts } from '$lib/comps/blog/posts.js';
 import authors from '$lib/comps/blog/authors.js';
 
 export async function load() {
+	const posts = getPosts();
 	const postList = posts
 		.map((post) => {
 			const author = authors.find((author) => author.name === post.author);
