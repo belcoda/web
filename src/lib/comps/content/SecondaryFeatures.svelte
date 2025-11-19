@@ -2,6 +2,8 @@
 	import SpeedMonitor from '$lib/comps/widgets/SpeedMonitor.svelte';
 	import WorksEverywhere from '$lib/comps/content/featuregrid/WorksEverywhere.svelte';
 	import Code from '$lib/comps/content/featuregrid/Code.svelte';
+
+	import imageGlobeSliceHires from './assets/globe-slice-hires.png';
 </script>
 
 <div class="-mt-20 bg-gray-50 pt-12 pb-40">
@@ -100,12 +102,8 @@
 							device, with any internet connection, in any country.
 						</p>
 					</div>
-					<div class="relative min-h-40 w-full grow">
-						<img
-							src="/images/backgrounds/globe_cropped_2.png"
-							alt="Globe"
-							class="size-full object-cover object-top"
-						/>
+					<div class="relative min-h-20 w-full grow">
+						<img src={imageGlobeSliceHires} alt="Globe" class="size-full object-cover object-top" />
 					</div>
 				</div>
 				<div
