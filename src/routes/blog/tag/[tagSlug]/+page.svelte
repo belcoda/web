@@ -7,11 +7,11 @@
 </script>
 
 {#snippet breadcrumbs()}
-	{#if data.author}
-		<BlogBreadcrumbs title={data.author.name} href={`/blog/author/${slugify(data.author.slug)}`} />
+	{#if data.tag}
+		<BlogBreadcrumbs title={data.tag} href={`/blog/tag/${slugify(data.tag)}`} />
 	{/if}
 {/snippet}
-<BlogPageLayout {breadcrumbs}>
+<BlogPageLayout breadcrumbs={data.tag ? breadcrumbs : undefined}>
 	{#each data.posts as item}
 		<BlogPostCard post={item.post} author={item.author} />
 	{/each}
