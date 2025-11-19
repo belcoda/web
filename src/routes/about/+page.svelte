@@ -1,7 +1,16 @@
 <script lang="ts">
 	import Header from '$lib/comps/nav/Header.svelte';
 	import Footer from '$lib/comps/nav/Footer.svelte';
-	import SpeedMonitor from '$lib/comps/widgets/SpeedMonitor.svelte';
+	import imageManStandingStreet from './_images/man-standing-street.jpg';
+	import MapPinIcon from '@lucide/svelte/icons/map-pin';
+	const { data } = $props();
+	import DjangoPic from './_images/django.jpg';
+	import KennethPic from './_images/kenneth.jpg';
+	import FriendsAtMarket from './_images/friends-at-market.jpg';
+	import SupportOurPlanet from './_images/support-our-planet.jpg';
+	import ShareTablet from './_images/share-tablet.jpg';
+	import WomanLookingAway from './_images/woman-looking-away.jpg';
+	import Meeting from './_images/meeting.jpg';
 </script>
 
 <Header variant="transparent" />
@@ -51,19 +60,55 @@
 				></div>
 			</div>
 			<div class="overflow-hidden">
-				<div class="mx-auto max-w-7xl px-6 pt-36 pb-32 sm:pt-60 lg:px-8 lg:pt-32">
+				<div class="mx-auto max-w-7xl px-6 pt-8 pb-32 sm:pt-12 lg:px-8 lg:pt-32">
 					<div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-						<div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-							<h1 class="text-5xl font-semibold tracking-tight text-pretty text-white sm:text-7xl">
-								We’re changing the way people connect
+						<div class="relative w-full pt-30 lg:max-w-xl lg:shrink-0 lg:pt-12 xl:max-w-2xl">
+							<h1 class="text-5xl font-semibold tracking-tight text-pretty text-white sm:text-6xl">
+								Software for social change
 							</h1>
 							<p
-								class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:max-w-md sm:text-xl/8 lg:max-w-none"
+								class="mt-8 text-lg font-medium text-pretty text-gray-200 sm:max-w-md sm:text-xl/8 lg:max-w-none"
 							>
-								Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit
-								aute velit. Et labore commodo nulla aliqua proident mollit ullamco exercitation
-								tempor. Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum. Eu
-								voluptate tempor esse minim amet fugiat veniam occaecat aliqua.
+								Belcoda started with a simple idea: Everyone working to make the world a better
+								place should have the software they need to succeed.
+							</p>
+							<p
+								class="text-md mt-4 font-light text-pretty text-gray-400 sm:max-w-md sm:text-lg/8 lg:max-w-none"
+							>
+								But far too often, people working to create change are being held back by software
+								that doesn't meet their needs.
+							</p>
+							<p
+								class="text-md mt-4 font-light text-pretty text-gray-400 sm:max-w-md sm:text-lg/8 lg:max-w-none"
+							>
+								Most software for social change organizing is designed for a specific type of
+								digital campaigning that emerged in the United States and Western Europe in the
+								2000s.
+							</p>
+							<p
+								class="text-md mt-4 font-light text-pretty text-gray-400 sm:max-w-md sm:text-lg/8 lg:max-w-none"
+							>
+								<strong class="font-semibold"
+									>So we started building organizing tools for the rest of the world.</strong
+								> Tools that were centered on mobile and messaging, and worked on any device with any
+								internet connection — anywhere in the world.
+							</p>
+							<p
+								class="text-md mt-4 font-light text-pretty text-gray-400 sm:max-w-md sm:text-lg/8 lg:max-w-none"
+							>
+								Over time, this vision has coalesced into Belcoda: a fully-featured toolset for
+								digital advocacy and organizing, with a deep and powerful intergation with WhatsApp
+								at its core.
+							</p>
+							<p
+								class="text-md mt-4 font-light text-pretty text-gray-400 sm:max-w-md sm:text-lg/8 lg:max-w-none"
+							>
+								Our unique history is also reflected in the <a
+									href="https://www.belcoda.org"
+									class="text-blue-500 hover:underline"
+									target="_blank">Belcoda Foundation</a
+								>, a non-profit organization that provides software grants and support to
+								locally-led community initiatives and grassroots organizing in the Global South.
 							</p>
 						</div>
 						<div
@@ -74,8 +119,8 @@
 							>
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-										alt=""
+										src={imageManStandingStreet}
+										alt="Man standing on a street looking at the camera"
 										class="aspect-2/3 w-full rounded-xl bg-gray-700/5 object-cover shadow-lg"
 									/>
 									<div
@@ -86,8 +131,8 @@
 							<div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-										alt=""
+										src={WomanLookingAway}
+										alt="Woman at a community meeting looking away from the camera"
 										class="aspect-2/3 w-full rounded-xl bg-gray-700/5 object-cover shadow-lg"
 									/>
 									<div
@@ -96,8 +141,8 @@
 								</div>
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-										alt=""
+										src={SupportOurPlanet}
+										alt="Man holding a sign that says 'Support your local planet'"
 										class="aspect-2/3 w-full rounded-xl bg-gray-700/5 object-cover shadow-lg"
 									/>
 									<div
@@ -108,8 +153,8 @@
 							<div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-										alt=""
+										src={ShareTablet}
+										alt="Man showing a tablet to a woman"
 										class="aspect-2/3 w-full rounded-xl bg-gray-700/5 object-cover shadow-lg"
 									/>
 									<div
@@ -118,8 +163,8 @@
 								</div>
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-										alt=""
+										src={FriendsAtMarket}
+										alt="Friends at a market posing"
 										class="aspect-2/3 w-full rounded-xl bg-gray-700/5 object-cover shadow-lg"
 									/>
 									<div
@@ -134,28 +179,30 @@
 		</div>
 
 		<!-- Content section -->
-		<div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+		<!-- <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-24">
 			<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
 				<h2 class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
-					Our mission
+					Our story
 				</h2>
 				<div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
 					<div class="lg:w-full lg:max-w-2xl lg:flex-auto">
 						<p class="text-xl/8 text-gray-300">
-							Everyone working to make the world a better place should have the software they need
-							to succeed.
+							Belcoda started with a simple idea: Everyone working to make the world a better place
+							should have the software they need to succeed.
 						</p>
 						<p class="mt-6 max-w-xl text-base/7 text-gray-400">
-							Belcoda was built to support a new generation of organizing. It's designed for any
-							language, on any device, with any internet connection, in any country.
+							Far too often, people working to create change are being held back by software that
+							doesn't meet their needs.
 						</p>
 						<p class="mt-4 max-w-xl text-base/7 text-gray-400">
-							Belcoda was built to support a new generation of organizing. It's designed for any
-							language, on any device, with any internet connection, in any country.
+							We built Belcoda for a <em>new generation</em> of organizing – highly decentralized,
+							coordinated through apps like WhatsApp, and happening <em>everywhere</em> (not just in
+							the United States and Western Europe).
 						</p>
 						<p class="mt-4 max-w-xl text-base/7 text-gray-400">
-							Belcoda was built to support a new generation of organizing. It's designed for any
-							language, on any device, with any internet connection, in any country.
+							These design choices have made Belcoda a unique tool for social change organizing –
+							focused on growing and mobilizing large, decentralized communities, and with WhatsApp
+							as the primary communication channel.
 						</p>
 					</div>
 					<div class="lg:flex lg:flex-auto lg:justify-center">
@@ -173,16 +220,16 @@
 								<dd class="text-5xl font-semibold tracking-tight text-white">46,000</dd>
 							</div>
 						</dl>
-					</div>
+					</div> 
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<!-- Image section -->
-		<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+		<div class="mt-12 sm:mt-16 xl:mx-auto xl:max-w-7xl xl:px-8">
 			<img
-				src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-				alt=""
+				src={Meeting}
+				alt="Woman addressing a meeting"
 				class="aspect-5/2 w-full object-cover outline-1 -outline-offset-1 outline-white/10 xl:rounded-3xl"
 			/>
 		</div>
@@ -194,55 +241,58 @@
 					Our values
 				</h2>
 				<p class="mt-6 text-lg/8 text-gray-300">
-					Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate
-					veritatis in accusamus quisquam.
+					These aren't just words. They’re baked into every decision we make, and every line of code
+					we write.
 				</p>
 			</div>
 			<dl
 				class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
 			>
 				<div>
-					<dt class="font-semibold text-white">Be world-class</dt>
+					<dt class="font-semibold text-white">Be a pleasure to use</dt>
 					<dd class="mt-1 text-gray-400">
-						Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam
-						exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro
-						vero.
+						Using Belcoda should be delightful. We aim to keep the interface fast, streamlined,
+						intuitive and beautiful. And we're always looking for little improvements and shortcuts
+						to make your life easier.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Share everything you know</dt>
+					<dt class="font-semibold text-white">Make our users better</dt>
 					<dd class="mt-1 text-gray-400">
-						Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id
-						molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.
+						Belcoda is carefully engineered to nudge you into organizing best practices, so that the
+						default way of doing things is to be the best version of your organizing self.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Always learning</dt>
+					<dt class="font-semibold text-white">Never forget the free tier</dt>
 					<dd class="mt-1 text-gray-400">
-						Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore
-						quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.
+						Belcoda was built to serve locally-led community initatives in low- and middle-income
+						countries (ie: people who don't have budgets for paid software). That's still our north
+						star.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Be supportive</dt>
+					<dt class="font-semibold text-white">Solve big problems</dt>
 					<dd class="mt-1 text-gray-400">
-						Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit
-						veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt
-						harum.
+						We're at our best when we're trying to solve big problems, chasing crazy goals, or
+						facing down impossible deadlines. We won't always succeed, but we're not afraid to take
+						on the hard stuff.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Take responsibility</dt>
+					<dt class="font-semibold text-white">Learn from our users</dt>
 					<dd class="mt-1 text-gray-400">
-						Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure.
-						Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.
+						Belcoda's users are world experts in organizing. They're the best product managers we
+						could possibly hope for. So we're not building a product for them, we're building a
+						product with them.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Enjoy downtime</dt>
+					<dt class="font-semibold text-white">Don’t cut corners. Especially on security.</dt>
 					<dd class="mt-1 text-gray-400">
-						Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius.
-						Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.
+						In general, try not to cut corners. But especially don’t cut corners on security or
+						privacy. Honor our users' trust by maintaining the highest standards of security and
+						privacy.
 					</dd>
 				</div>
 			</dl>
@@ -336,8 +386,12 @@
 						Our team
 					</h2>
 					<p class="mt-6 text-lg/8 text-gray-400">
-						We’re a dynamic group of individuals who are passionate about what we do and dedicated
-						to delivering the best results for our clients.
+						Belcoda is built by a small remote team. If you’re interested in joining us, check out
+						our <a
+							href="https://belcoda.notion.site/Careers-78f34ed4508d46f69a92e5fea15a7e19"
+							class="text-blue-500 hover:underline"
+							target="_blank">careers</a
+						> page.
 					</p>
 				</div>
 				<ul
@@ -346,30 +400,29 @@
 				>
 					<li>
 						<img
-							src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-							alt=""
+							src={DjangoPic}
+							alt="Django Merope"
 							class="aspect-3/2 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-white/10"
 						/>
-						<h3 class="mt-6 text-lg/8 font-semibold text-white">Emma Dorsey</h3>
-						<p class="text-base/7 text-gray-400">Senior Developer</p>
+						<h3 class="mt-6 text-lg/8 font-semibold text-white">Django Merope</h3>
+						<p class="text-base/7 text-gray-400">Founder & project lead</p>
+						<div class="mt-1 flex items-center gap-x-1 text-gray-500">
+							<MapPinIcon class="inline-block size-4" />
+							<p class="text-sm">Japan</p>
+						</div>
+
 						<p class="mt-4 text-base/7 text-gray-400">
-							Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla
-							officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut
-							voluptas. Officiis velit eos ducimus.
+							Django has been a campaigner, communications consultant, organizer, and software
+							engineer. He’s worked at the intersection of technology and social change for more
+							than 15 years.
 						</p>
 						<ul role="list" class="mt-6 flex gap-x-6">
 							<li>
-								<a href="#" class="text-gray-400 hover:text-gray-300">
-									<span class="sr-only">X</span>
-									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
-										<path
-											d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-										/>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="text-gray-400 hover:text-gray-300">
+								<a
+									href="https://www.linkedin.com/in/dmsynge/"
+									target="_blank"
+									class="text-gray-400 hover:text-gray-300"
+								>
 									<span class="sr-only">LinkedIn</span>
 									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
 										<path
@@ -384,106 +437,27 @@
 					</li>
 					<li>
 						<img
-							src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-							alt=""
+							src={KennethPic}
+							alt="Kenneth Lebu"
 							class="aspect-3/2 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-white/10"
 						/>
-						<h3 class="mt-6 text-lg/8 font-semibold text-white">Alicia Bell</h3>
-						<p class="text-base/7 text-gray-400">Junior Copywriter</p>
+						<h3 class="mt-6 text-lg/8 font-semibold text-white">Kenneth Lebu</h3>
+						<p class="text-base/7 text-gray-400">Software engineer</p>
+						<div class="mt-1 flex items-center gap-x-1 text-gray-500">
+							<MapPinIcon class="inline-block size-4" />
+							<p class="text-sm">Kenya</p>
+						</div>
 						<p class="mt-4 text-base/7 text-gray-400">
-							Turpis lectus et amet elementum. Mi duis integer sed in vitae consequat. Nam vitae, in
-							felis mi dui tempus. Porta at turpis eu odio. Et, sed duis in blandit bibendum
-							accumsan. Purus viverra facilisi suspendisse quis est.
+							Kenneth is a software engineer with a background working in non-profits and public
+							health organizations.
 						</p>
 						<ul role="list" class="mt-6 flex gap-x-6">
 							<li>
-								<a href="#" class="text-gray-400 hover:text-gray-300">
-									<span class="sr-only">X</span>
-									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
-										<path
-											d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-										/>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="text-gray-400 hover:text-gray-300">
-									<span class="sr-only">LinkedIn</span>
-									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
-										<path
-											d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<img
-							src="https://images.unsplash.com/photo-1507101105822-7472b28e22ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-							alt=""
-							class="aspect-3/2 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-white/10"
-						/>
-						<h3 class="mt-6 text-lg/8 font-semibold text-white">Jenny Wilson</h3>
-						<p class="text-base/7 text-gray-400">Studio Artist</p>
-						<p class="mt-4 text-base/7 text-gray-400">
-							Aliquet adipiscing lectus praesent cras sed quis lectus egestas erat. Bibendum
-							curabitur eget habitant feugiat nec faucibus eu lorem suscipit. Vitae vitae tempor
-							enim eget lacus nulla leo.
-						</p>
-						<ul role="list" class="mt-6 flex gap-x-6">
-							<li>
-								<a href="#" class="text-gray-400 hover:text-gray-300">
-									<span class="sr-only">X</span>
-									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
-										<path
-											d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-										/>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="text-gray-400 hover:text-gray-300">
-									<span class="sr-only">LinkedIn</span>
-									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
-										<path
-											d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-											clip-rule="evenodd"
-											fill-rule="evenodd"
-										/>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<img
-							src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-							alt=""
-							class="aspect-3/2 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-white/10"
-						/>
-						<h3 class="mt-6 text-lg/8 font-semibold text-white">Anna Roberts</h3>
-						<p class="text-base/7 text-gray-400">Partner, Creative</p>
-						<p class="mt-4 text-base/7 text-gray-400">
-							Quis bibendum velit diam tellus sed ut. Faucibus posuere enim, vitae enim eget neque
-							tortor. Metus lectus mattis id id. Tellus ornare etiam id velit ut enim lacinia congue
-							ultrices. Sit morbi vel elit a maecenas mauris elit lectus magna.
-						</p>
-						<ul role="list" class="mt-6 flex gap-x-6">
-							<li>
-								<a href="#" class="text-gray-400 hover:text-gray-300">
-									<span class="sr-only">X</span>
-									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
-										<path
-											d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-										/>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="text-gray-400 hover:text-gray-300">
+								<a
+									href="https://www.linkedin.com/in/kenneth-lebu"
+									target="_blank"
+									class="text-gray-400 hover:text-gray-300"
+								>
 									<span class="sr-only">LinkedIn</span>
 									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
 										<path
@@ -501,120 +475,70 @@
 		</div>
 
 		<!-- Blog section -->
-		<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+		<div class="mx-auto mt-8 max-w-7xl px-6 pb-32 sm:mt-12 lg:px-8">
 			<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-				<h2 class="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
-					From the blog
-				</h2>
-				<p class="mt-2 text-lg/8 text-gray-400">
-					Learn how to grow your business with our expert advice.
-				</p>
+				<div class="flex items-start justify-center antialiased">
+					<div class="">
+						<h2
+							class="mx-auto max-w-3xl text-center text-4xl font-black tracking-tight text-white uppercase italic sm:text-5xl"
+						>
+							Power Tools
+						</h2>
+						<h4
+							class="mx-auto max-w-3xl text-right text-lg font-extralight tracking-tight text-gray-200"
+						>
+							The Belcoda Blog
+						</h4>
+					</div>
+				</div>
 			</div>
 			<div
 				class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
 			>
-				<article
-					class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-800 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80"
-				>
-					<img
-						src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-						alt=""
-						class="absolute inset-0 -z-10 size-full object-cover"
-					/>
-					<div class="absolute inset-0 -z-10 bg-linear-to-t from-black/80 via-black/40"></div>
-					<div class="absolute inset-0 -z-10 rounded-2xl inset-ring inset-ring-white/10"></div>
+				{#each data.posts as post}
+					<article
+						class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-800 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80"
+					>
+						<img
+							src={post.post.image}
+							alt={post.post.title}
+							class="absolute inset-0 -z-10 size-full object-cover"
+						/>
+						<div class="absolute inset-0 -z-10 bg-linear-to-t from-black/80 via-black/40"></div>
+						<div class="absolute inset-0 -z-10 rounded-2xl inset-ring inset-ring-white/10"></div>
 
-					<div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
-						<time datetime="2020-03-16" class="mr-8">Mar 16, 2020</time>
-						<div class="-ml-4 flex items-center gap-x-4">
-							<svg viewBox="0 0 2 2" class="-ml-0.5 size-0.5 flex-none fill-gray-300/50">
-								<circle r="1" cx="1" cy="1" />
-							</svg>
-							<div class="flex gap-x-2.5">
-								<img
-									src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-									alt=""
-									class="size-6 flex-none rounded-full bg-gray-800/10"
-								/>
-								Michael Foster
+						<div
+							class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300"
+						>
+							<time datetime={post.post.date} class="mr-8"
+								>{new Date(post.post.date).toLocaleDateString('en-US', {
+									year: 'numeric',
+									month: 'short',
+									day: 'numeric'
+								})}</time
+							>
+							<div class="-ml-4 flex items-center gap-x-4">
+								<svg viewBox="0 0 2 2" class="-ml-0.5 size-0.5 flex-none fill-gray-300/50">
+									<circle r="1" cx="1" cy="1" />
+								</svg>
+								<div class="flex gap-x-2.5">
+									<img
+										src={post.author.avatar}
+										alt={post.author.name}
+										class="size-6 flex-none rounded-full bg-gray-800/10"
+									/>
+									{post.author.name}
+								</div>
 							</div>
 						</div>
-					</div>
-					<h3 class="mt-3 text-lg/6 font-semibold text-white">
-						<a href="#">
-							<span class="absolute inset-0"></span>
-							Vel expedita assumenda placeat aut nisi optio voluptates quas
-						</a>
-					</h3>
-				</article>
-				<article
-					class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-800 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80"
-				>
-					<img
-						src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
-						alt=""
-						class="absolute inset-0 -z-10 size-full object-cover"
-					/>
-					<div class="absolute inset-0 -z-10 bg-linear-to-t from-black/80 via-black/40"></div>
-					<div class="absolute inset-0 -z-10 rounded-2xl inset-ring inset-ring-white/10"></div>
-
-					<div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
-						<time datetime="2020-03-10" class="mr-8">Mar 10, 2020</time>
-						<div class="-ml-4 flex items-center gap-x-4">
-							<svg viewBox="0 0 2 2" class="-ml-0.5 size-0.5 flex-none fill-gray-300/50">
-								<circle r="1" cx="1" cy="1" />
-							</svg>
-							<div class="flex gap-x-2.5">
-								<img
-									src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-									alt=""
-									class="size-6 flex-none rounded-full bg-gray-800/10"
-								/>
-								Lindsay Walton
-							</div>
-						</div>
-					</div>
-					<h3 class="mt-3 text-lg/6 font-semibold text-white">
-						<a href="#">
-							<span class="absolute inset-0"></span>
-							Libero quisquam voluptatibus nam iusto qui dolor
-						</a>
-					</h3>
-				</article>
-				<article
-					class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-800 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80"
-				>
-					<img
-						src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
-						alt=""
-						class="absolute inset-0 -z-10 size-full object-cover"
-					/>
-					<div class="absolute inset-0 -z-10 bg-linear-to-t from-black/80 via-black/40"></div>
-					<div class="absolute inset-0 -z-10 rounded-2xl inset-ring inset-ring-white/10"></div>
-
-					<div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
-						<time datetime="2020-02-12" class="mr-8">Feb 12, 2020</time>
-						<div class="-ml-4 flex items-center gap-x-4">
-							<svg viewBox="0 0 2 2" class="-ml-0.5 size-0.5 flex-none fill-gray-300/50">
-								<circle r="1" cx="1" cy="1" />
-							</svg>
-							<div class="flex gap-x-2.5">
-								<img
-									src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-									alt=""
-									class="size-6 flex-none rounded-full bg-gray-800/10"
-								/>
-								Tom Cook
-							</div>
-						</div>
-					</div>
-					<h3 class="mt-3 text-lg/6 font-semibold text-white">
-						<a href="#">
-							<span class="absolute inset-0"></span>
-							Asperiores mollitia et dolor autem modi sit eius quisquam
-						</a>
-					</h3>
-				</article>
+						<h3 class="mt-3 text-lg/6 font-semibold text-white">
+							<a href={`/blog/${post.post.slug}`}>
+								<span class="absolute inset-0"></span>
+								{post.post.title}
+							</a>
+						</h3>
+					</article>
+				{/each}
 			</div>
 		</div>
 	</main>
