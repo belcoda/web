@@ -31,7 +31,7 @@
 				<a
 					href={`/blog/tag/${slugify(post.tag)}`}
 					class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-					>Marketing</a
+					>{post.tag}</a
 				>
 			</div>
 			<div class="group relative grow">
@@ -49,7 +49,7 @@
 				<img src={author.avatar} alt={author.name} class="size-10 rounded-full bg-gray-100" />
 				<div class="text-sm/6">
 					<p class="font-semibold text-gray-900">
-						<a href={`/blog/author/${slugify(author.name)}`}>
+						<a href={`/blog/author/${author.slug}`}>
 							<span class="absolute inset-0"></span>
 							{author.name}
 						</a>
