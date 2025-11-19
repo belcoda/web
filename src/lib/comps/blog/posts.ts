@@ -1,5 +1,6 @@
-import authors from './authors.js';
-import tags from './tags.js';
+import authors, { isAuthor } from './authors.js';
+import tags, { isTagSlug } from './tags.js';
+import { slugify } from '$lib/utils';
 
 const posts = [
 	{
@@ -39,6 +40,26 @@ export type Post = {
 export function getPosts(count: number = 25) {
 	const sortedPosts = posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 	return sortedPosts.slice(0, count);
+}
+
+export function getPostsByAuthor(author: string, count: number = 25): Post[] {
+	if (!isAuthor(author)) {
+		return [];
+	}
+	return posts
+		.filter((post) => post.author === author)
+		.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+		.slice(0, count);
+}
+
+export function getPostsByTag(tag: string, count: number = 25): Post[] {
+	if (!isTagSlug(tag)) {
+		return [];
+	}
+	return posts
+		.filter((post) => slugify(post.tag) === tag)
+		.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+		.slice(0, count);
 }
 
 export default posts;
