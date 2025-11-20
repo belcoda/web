@@ -7,23 +7,47 @@ const posts = [
 		title: 'Why We Chose Zero',
 		description:
 			'How query-powered sync enables instant performance, minimal data usage, and offline-first reliability for community organizing—even on slow connections and low-powered devices.',
-		image:
-			'https://images.unsplash.com/photo-1656322014403-298004da9460?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+		image: '/images/blog/zero.webp',
 		slug: 'why-we-chose-zero',
 		date: '2025-11-13',
 		author: 'Django Merope',
 		tag: 'Technology'
 	},
 	{
-		title: 'A test blog post',
-		description:
-			'In this post, I’ll show how easy it is to integrate markdown in SvelteKit with `mdsvex`.',
-		image:
-			'https://images.unsplash.com/photo-1761839257287-3030c9300ece?ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070',
-		slug: 'test-post',
+		title: 'What is Power Tools?',
+		description: 'Why does Belcoda need a blog? What will we write about? And why should you care?',
+		image: '/images/blog/what-is-power-tools.webp',
+		slug: 'what-is-power-tools',
 		date: '2025-11-13',
-		author: 'Dr. Fabuloso the Fabulous',
-		tag: 'Organizing'
+		author: 'Django Merope',
+		tag: 'Belcoda'
+	},
+	{
+		title: 'Building the Wrong Thing',
+		description: 'How we built Belcoda, and why we built it the way we did.',
+		image: '/images/blog/what-is-power-tools.webp',
+		slug: 'building-the-wrong-thing',
+		date: '2025-11-13',
+		author: 'Django Merope',
+		tag: 'Belcoda'
+	},
+	{
+		title: "One integration isn't enough",
+		description: 'Why you need to integrate with WhatsApp, Facebook, and Instagram.',
+		image: '/images/blog/what-is-power-tools.webp',
+		slug: 'whatsapp-one-integration-is-not-enough',
+		date: '2025-11-13',
+		author: 'Django Merope',
+		tag: 'WhatsApp'
+	},
+	{
+		title: 'WhatsApp, why and how',
+		description: 'How to use WhatsApp for community organizing.',
+		image: '/images/blog/what-is-power-tools.webp',
+		slug: 'whatsapp-why-and-how',
+		date: '2025-11-13',
+		author: 'Django Merope',
+		tag: 'WhatsApp'
 	}
 ] as const satisfies Post[];
 

@@ -6,7 +6,8 @@ const tags = [
 	'Community',
 	'WhatsApp',
 	'Email',
-	'Events'
+	'Events',
+	'Belcoda'
 ] as const satisfies string[];
 
 export type Tag = (typeof tags)[number];
