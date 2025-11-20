@@ -1,0 +1,80 @@
+---
+title: One integration isn't enough
+author: Django Merope Synge
+slug: what-is-power-tools
+layout: blog
+date: 2025-11-13
+tag: WhatsApp
+darken_image: true
+image: /images/blog/what-is-power-tools.webp
+description: Why does Belcoda need a blog? What will we write about? And why should you care?
+author_avatar: https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80
+---
+<script>
+import NewsletterSignup from "$lib/comps/blog/BlogSignup.svelte";
+</script>
+
+## Why use WhatsApp for community organizing?
+
+WhatsApp is the most popular mobile messaging app worldwide, with over three billion monthly active users ([March 2025](https://www.statista.com/statistics/260819/number-of-monthly-active-whatsapp-users/)). India, with 854 million users, has the highest [number of users by country](https://worldpopulationreview.com/country-rankings/whatsapp-users-by-country), followed by Brazil (148 million), Indonesia (112 million), the United States (98 million) and The Philippines (88 million). 
+
+The app is widely accessible in that it uses little mobile data and while it may not offer the digital security of alternatives like [Signal](https://signal.org/), it still offers end-to-end encryption on all messages, chats and calls, making it more secure than Facebook Messenger, Slack or SMS. 
+
+[Engagement rates](https://m.aisensy.com/blog/whatsapp-statistics-for-businesses/) on WhatsApp are unmatched by other messaging apps, and much higher than on email and SMS. Messages on WhatsApp have a 98% open rate -  5 times more than emails and SMS. Click-through rates range from 45-60% compared to 2-5% on email and SMS.
+
+This makes WhatsApp an attractive app for advocacy and movement building. WhatsApp can be used as a platform for supporter community building, to activate distributed networks, as well as for communication between campaigners and a channel for crowdsourced knowledge. 
+
+Platforms like **Belcoda** build on these strengths, helping grassroots organizations use WhatsApp effectively for community organizing, event sign-ups, and taking action. 
+
+For a more detailed guide on who (amongst grassroots organizers and activists) is already using WhatsApp, why, as well as the risks in doing so, check out the BlueprintsForChange resource.
+
+## How to use WhatsApp and how Belcoda can help you
+
+For a step-by-step guide on how to set up and use WhatsApp and a breakdown of its key features and tools, click here.
+
+### Direct conversations, Groups, Communities, and Channels
+
+WhatsApp offers several ways to engage your community: **direct conversations,** **Groups**, **Communities**, and **Channels.**  Each come with their own strengths and limits. Together, they can form the backbone of a distributed organizing network, and Belcoda helps you make the most of them.
+
+- **One-on-one direct conversations** are the most personal and powerful way to build trust, follow up on actions, and support volunteers and supporters individually. But they’re also time-consuming at scale. Belcoda helps by organizing your chat history, tagging contacts, and automating some replies, so personal outreach stays meaningful without becoming overwhelming.
+- **Groups** are ideal for collaboration and coordination. You can bring together campaign teams, volunteer clusters, or topic-based working groups to exchange updates and ideas. However, group chats can quickly become noisy or hard to moderate, especially at scale. Belcoda helps by connecting each WhatsApp group to your campaign database, letting you track engagement, follow up individually, and automate key reminders or updates.
+- **Communities** allow you to bring several related groups under one umbrella and broadcast messages to all of them at once. For instance, linking all city or regional volunteer groups into one national network. Belcoda integrates with WhatsApp Communities so you can synch participant data and engagement metrics across multiple groups, giving you a clearer view of your movement’s overall activity.
+- **Channels** are best for one-way communication, such as campaign updates, action alerts, or media announcements. Belcoda makes it easy to connect your WhatsApp Channel with petitions, events, or surveys, so when someone taps through from a Channel message, they can immediately take action inside WhatsApp itself.
+
+For easier typing and faster multitasking, organizers can use **WhatsApp Web** or the **Desktop app**, which lets you log in by scanning a QR code from your phone and manage multiple conversations efficiently.
+
+### **Advanced WhatsApp Features**
+
+- **WhatsApp Business**
+    
+    For keeping organizing work separate from personal messaging, WhatsApp Business lets you set up a dedicated account with a separate number, basic automations like auto-replies, and a desktop app for easier coordination. 
+    
+- **Bulk messages & interactive threads**
+    
+    Normally, sending large volumes of messages or creating automated interactive threads (e.g. “Reply 1 to sign up, 2 to learn more”) requires API-based tools such as WhatsApp Business API integrations, which can be expensive and restricted. Belcoda makes it easier for grassroots organizers to send bulk messages and set up interactive threads without paying extra for the API, while still allowing actions like petitions, signups, or surveys directly in WhatsApp.
+    
+- [**wa.me](http://wa.me/) links with encoded messages**
+    
+    WhatsApp allows you to create clickable links (e.g. `wa.me/1234567890?text=I+want+to+join+your+campaign`) or QR codes that opens WhatsApp with a pre-filled message to your number. This makes it easy for people to contact you directly from a website, social post, or flyer. Belcoda makes this simple by automatically generating WhatsApp links and QR codes for your petitions, event signups, or other campaign actions.
+    
+
+## Belcoda: key features summarised
+
+[**Belcoda**](https://www.notion.so/Belcoda-UX-research-1f423474e3b38018b30fedb877a3fc7f?pvs=21) is an official, Meta-approved tool that use the WhatsApp Business API: the only legitimate way to send bulk messages or build automated conversation flows.
+
+It is an all-in-one organizing CRM designed specifically for community organizers in the Global South, combining campaign management, supporter databases, and WhatsApp tools in one place.  
+
+**Key features:**
+
+- Includes WhatsApp API-based messaging tools, with all the usual advantages like bulk messages and interactive threads.
+- Interactive threads and “flows” can be directly linked to petitions, events, or surveys, letting supporters take action from within WhatsApp itself.
+- Built-in multi-user chat management means organizers can coordinate messages from the same WhatsApp account without relying on external inbox tools or complex integrations.
+- Uses [wa.me](http://wa.me/) links to make simple things like petition or event signups possible through direct WhatsApp links or QR codes.
+- Engagement metrics track your entire cycle of supporter engagement, not just WhatsApp activity in isolation.
+    - Free for grassroots organizations (bulk messages via WhatsApp APIs are charged at cost, with no markup).
+
+For how to get set up on Belcoda, click here. 
+
+For more tools that specialize in advanced chat management, analytics, and automation across multiple platforms, read about YourMovement or [Timelines.ai](http://timelines.ai/) in the BlueprintsForChange resource.
+
+<NewsletterSignup />

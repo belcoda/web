@@ -1,0 +1,90 @@
+---
+title: One integration isn't enough
+author: Django Merope Synge
+slug: what-is-power-tools
+layout: blog
+date: 2025-11-13
+tag: WhatsApp
+darken_image: true
+image: /images/blog/what-is-power-tools.webp
+description: Why does Belcoda need a blog? What will we write about? And why should you care?
+author_avatar: https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80
+
+---
+<script>
+import NewsletterSignup from "$lib/comps/blog/BlogSignup.svelte";
+</script>
+
+# The Multi-Touchpoint Approach: How Belcoda Weaves WhatsApp Throughout the Organizing Experience
+
+WhatsApp is where organizing happens. With over three billion users worldwide and 98% message open rates, it's not just another channel—it's *the* channel for grassroots movements across the Global South.
+
+But here's the thing about WhatsApp: there's no single perfect way to integrate with it.
+
+Every integration approach comes with its own set of limitations and tradeoffs. The official business APIs are powerful but restrictive. Direct integrations offer different capabilities but come with their own constraints. And certain features—like working with WhatsApp groups—are only accessible through specific integration methods.
+
+So we made a choice: instead of forcing organizers to work around the limitations of any single approach, we built multiple touchpoints that work together. The result is WhatsApp functionality that permeates the entire Belcoda platform.
+
+## Why multiple touchpoints matter
+
+Most organizing platforms treat WhatsApp as an add-on—a separate messaging module that sits alongside their core features. Send your bulk messages here, do your organizing work there. Two separate worlds.
+
+We took a different path.
+
+By weaving WhatsApp touchpoints throughout Belcoda, we're meeting organizers where they already work. When someone signs up for your event, they can do it through WhatsApp. When you're taking attendance, people can check in with a WhatsApp QR code. When you need to reach your community, you have multiple ways to connect.
+
+This isn't about having more features. It's about recognizing that effective organizing happens across multiple surfaces—and WhatsApp needs to be present at each one.
+
+## The integration landscape
+
+The WhatsApp Business Cloud API gives us access to powerful features: bulk messaging with templates, interactive messages with quick-reply buttons, and sophisticated web forms delivered right inside WhatsApp conversations. These official channels are reliable and robust.
+
+But they're also expensive. Template messages can cost over US$0.07 each in many countries. New accounts face strict sending limits. And onboarding can require business documentation that grassroots organizations don't always have.
+
+Meanwhile, direct integration approaches open up entirely different possibilities. Access to WhatsApp groups—essential for community organizing—is only available through these alternative methods. The tradeoffs are different, but so are the opportunities.
+
+Rather than choosing one path or the other, we use both. Each touchpoint is built with the integration approach that makes it possible.
+
+## Small integrations, big impact
+
+Our approach shows up in unexpected places throughout Belcoda:
+
+**Action links and QR codes** let people sign up for events or take action by sending a WhatsApp message. Scan a code, hit send, done. We match the incoming message to the action and create or update their record automatically.
+
+**Attendance tracking** works the same way. Display a QR code at your event, attendees scan it with their phones, and they're marked present. No clipboards, no manual data entry.
+
+**Smart surveys** help complete user profiles. When someone new signs up via WhatsApp, we can automatically send them a quick form—delivered inside WhatsApp itself—to collect their name, email, and any custom fields you need for that specific event.
+
+**Group monitoring** gives you visibility into your WhatsApp groups from inside Belcoda. Track membership changes, see activity levels, and keep your CRM in sync with where organizing actually happens.
+
+Each touchpoint is small on its own. Together, they transform how WhatsApp works with your organizing tools.
+
+## What's coming next
+
+We're not done. Two major developments are on our roadmap:
+
+A **desktop application** that will unlock even more integration possibilities by running directly on organizers' computers, using their own internet connections. This will open up features that simply aren't possible through web-based platforms alone.
+
+A **conversational interface** that will let organizers interact with Belcoda directly through WhatsApp messages. Send a message to update a contact, check event registrations, or draft a campaign message—all without leaving WhatsApp.
+
+## Building on uncertain ground
+
+Let's be direct: building on any messaging platform involves risk. Features can change. APIs can be deprecated. What works today might not work tomorrow.
+
+We manage this risk through diversification. Multiple integration approaches mean we're not dependent on any single method. Our modular architecture means we can adapt as the platform evolves. And our status as a Meta Tech Partner gives us additional stability and support.
+
+But the biggest risk would be not building for WhatsApp at all. This is where organizing happens. This is where communities connect. We need to be there, even if the ground shifts beneath us.
+
+## The Belcoda difference
+
+To our knowledge, we're the only organizing platform that combines multiple WhatsApp integration approaches across the entire application. Others offer messaging modules. Some provide basic integrations. None weave WhatsApp throughout the organizing experience the way we do.
+
+This isn't just about having more features or checking more boxes. It's about recognizing that effective organizing doesn't happen in neat, separate channels. It happens wherever people are—and increasingly, that's WhatsApp.
+
+By building multiple touchpoints that work together, we're not just adapting to WhatsApp's limitations. We're creating something new: an organizing platform where WhatsApp isn't bolted on, but built in from the ground up.
+
+Because when three billion people use a platform every day—when messages have 98% open rates and 45-60% click rates—you don't just add it as a feature.
+
+You build around it.
+
+<Newsletter />
