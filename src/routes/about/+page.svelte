@@ -4,7 +4,7 @@
 	import imageManStandingStreet from './_images/man-standing-street.jpg';
 	import MapPinIcon from '@lucide/svelte/icons/map-pin';
 	const { data } = $props();
-	import DjangoPic from './_images/django.jpg';
+	import DjangoPic from './_images/django-img.jpg';
 	import KennethPic from './_images/kenneth.jpg';
 	import FriendsAtMarket from './_images/friends-at-market.jpg';
 	import SupportOurPlanet from './_images/support-our-planet.jpg';
