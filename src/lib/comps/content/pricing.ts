@@ -29,13 +29,13 @@ export const tiers = [
 		interval: 'admin',
 		features: [
 			{
-				name: 'All free features'
-			},
-			{
 				name: '25 admin accounts'
 			},
 			{
 				name: 'Custom domain'
+			},
+			{
+				name: 'Advanced analytics & reporting'
 			},
 			{
 				name: 'Email & page templates'
@@ -55,9 +55,6 @@ export const tiers = [
 			},
 			{
 				name: 'Dedicated support engineer'
-			},
-			{
-				name: 'Advanced analytics & reporting'
 			},
 			{
 				name: 'Cross-network organizing'
