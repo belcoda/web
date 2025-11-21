@@ -80,7 +80,7 @@
 
 <section
 	id="features"
-	aria-label="Features for running your books"
+	aria-label="Features for organizing your community"
 	class="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
 >
 	<img
