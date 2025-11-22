@@ -9,8 +9,11 @@
 	import Pricing from '$lib/comps/content/Pricing.svelte';
 </script>
 
-<Header variant="transparent" />
+<svelte:head>
+	<title>Belcoda</title>
+</svelte:head>
 
+<Header variant="transparent" />
 <PrimaryFeatures />
 <Mission />
 <SecondaryFeatures />

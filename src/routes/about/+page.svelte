@@ -13,6 +13,14 @@
 	import manWithMegaphone from './_images/man-with-megaphone.webp';
 </script>
 
+<svelte:head>
+	<title>About | Belcoda</title>
+	<meta
+		name="description"
+		content="Learn about Belcoda, a platform for community organizing and activism."
+	/>
+</svelte:head>
+
 <Header variant="transparent" />
 
 <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->

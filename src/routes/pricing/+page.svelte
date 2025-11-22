@@ -9,6 +9,10 @@
 	import { tiers } from '$lib/comps/content/pricing';
 </script>
 
+<svelte:head>
+	<title>Pricing | Belcoda</title>
+</svelte:head>
+
 <Header />
 <form class="group/tiers isolate overflow-hidden bg-white">
 	<div class="flow-root border-b border-b-transparent bg-gray-900 pt-24 pb-16 sm:pt-48 lg:pb-0">

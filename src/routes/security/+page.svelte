@@ -7,6 +7,15 @@
 	import Subprocessor from './_components/Subprocessor.svelte';
 </script>
 
+<svelte:head>
+	<title>Security | Belcoda</title>
+	<meta
+		name="description"
+		content="Belcoda takes security seriously. We've implemented a comprehensive security program to protect our users' data and privacy."
+	/>
+	<meta name="keywords" content="Belcoda, security, privacy, data protection" />
+</svelte:head>
+
 <Header />
 <div class="bg-gray-900 pt-32 pb-8 sm:pt-48">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">

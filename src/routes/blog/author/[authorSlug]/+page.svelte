@@ -6,6 +6,10 @@
 	import { slugify } from '$lib/utils';
 </script>
 
+<svelte:head>
+	<title>{data.author.name} | The Belcoda Blog</title>
+</svelte:head>
+
 {#snippet breadcrumbs()}
 	{#if data.author}
 		<BlogBreadcrumbs title={data.author.name} href={`/blog/author/${slugify(data.author.slug)}`} />
