@@ -17,8 +17,8 @@
 								>
 							</li>
 							<li>
-								<a href="/features/whatsapp" class="text-sm/6 text-gray-400 hover:text-white"
-									>WhatsApp</a
+								<a href="/features/communications" class="text-sm/6 text-gray-400 hover:text-white"
+									>Communications</a
 								>
 							</li>
 							<li>
