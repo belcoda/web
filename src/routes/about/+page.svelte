@@ -10,17 +10,17 @@
 	import SupportOurPlanet from './_images/support-our-planet.jpg';
 	import ShareTablet from './_images/share-tablet.jpg';
 	import WomanLookingAway from './_images/woman-looking-away.jpg';
-	import Meeting from './_images/meeting.jpg';
+	import manWithMegaphone from './_images/man-with-megaphone.webp';
 </script>
 
 <Header variant="transparent" />
 
 <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
-<div class="bg-gray-900">
+<div class="bg-white">
 	<main class="isolate">
 		<!-- Hero section -->
-		<div class="relative isolate -z-10">
+		<div class="relative isolate -z-10 bg-gray-900">
 			<svg
 				aria-hidden="true"
 				class="absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-white/10"
@@ -226,21 +226,23 @@
 		</div>-->
 
 		<!-- Image section -->
-		<div class="mt-12 sm:mt-16 xl:mx-auto xl:max-w-7xl xl:px-8">
-			<img
-				src={Meeting}
-				alt="Woman addressing a meeting"
-				class="aspect-5/2 w-full object-cover outline-1 -outline-offset-1 outline-white/10 xl:rounded-3xl"
-			/>
+		<div class="bg-gray-900 pb-20">
+			<div class="-mt-12 xl:mx-auto xl:max-w-7xl xl:px-8">
+				<img
+					src={manWithMegaphone}
+					alt="Woman addressing a meeting"
+					class="aspect-5/2 w-full object-cover outline-1 -outline-offset-1 outline-white/10 xl:rounded-3xl"
+				/>
+			</div>
 		</div>
 
 		<!-- Feature section -->
 		<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
 			<div class="mx-auto max-w-2xl lg:mx-0">
-				<h2 class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+				<h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
 					Our values
 				</h2>
-				<p class="mt-6 text-lg/8 text-gray-300">
+				<p class="mt-6 text-lg/8 text-gray-600">
 					These aren't just words. They’re baked into every decision we make, and every line of code
 					we write.
 				</p>
@@ -249,47 +251,47 @@
 				class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
 			>
 				<div>
-					<dt class="font-semibold text-white">Be a pleasure to use</dt>
-					<dd class="mt-1 text-gray-400">
+					<dt class="font-semibold text-gray-800">Be a pleasure to use</dt>
+					<dd class="mt-1 text-gray-500">
 						Using Belcoda should be delightful. We aim to keep the interface fast, streamlined,
 						intuitive and beautiful. And we're always looking for little improvements and shortcuts
 						to make your life easier.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Make our users better</dt>
-					<dd class="mt-1 text-gray-400">
+					<dt class="font-semibold text-gray-800">Make our users better</dt>
+					<dd class="mt-1 text-gray-500">
 						Belcoda is carefully engineered to nudge you into organizing best practices, so that the
 						default way of doing things is to be the best version of your organizing self.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Never forget the free tier</dt>
-					<dd class="mt-1 text-gray-400">
+					<dt class="font-semibold text-gray-800">Never forget the free tier</dt>
+					<dd class="mt-1 text-gray-500">
 						Belcoda was built to serve locally-led community initatives in low- and middle-income
 						countries (ie: people who don't have budgets for paid software). That's still our north
 						star.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Solve big problems</dt>
-					<dd class="mt-1 text-gray-400">
+					<dt class="font-semibold text-gray-800">Solve big problems</dt>
+					<dd class="mt-1 text-gray-500">
 						We're at our best when we're trying to solve big problems, chasing crazy goals, or
 						facing down impossible deadlines. We won't always succeed, but we're not afraid to take
 						on the hard stuff.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Learn from our users</dt>
-					<dd class="mt-1 text-gray-400">
+					<dt class="font-semibold text-gray-800">Learn from our users</dt>
+					<dd class="mt-1 text-gray-500">
 						Belcoda's users are world experts in organizing. They're the best product managers we
 						could possibly hope for. So we're not building a product for them, we're building a
 						product with them.
 					</dd>
 				</div>
 				<div>
-					<dt class="font-semibold text-white">Don’t cut corners. Especially on security.</dt>
-					<dd class="mt-1 text-gray-400">
+					<dt class="font-semibold text-gray-800">Don’t cut corners. Especially on security.</dt>
+					<dd class="mt-1 text-gray-500">
 						In general, try not to cut corners. But especially don’t cut corners on security or
 						privacy. Honor our users' trust by maintaining the highest standards of security and
 						privacy.
@@ -379,13 +381,13 @@
 		</div> -->
 
 		<!-- Team section -->
-		<div class="bg-gray-900 py-24 md:py-32 lg:py-40">
+		<div class=" py-24 md:py-32 lg:py-40">
 			<div class="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-3">
 				<div class="mx-auto max-w-2xl lg:mx-0">
-					<h2 class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+					<h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
 						Our team
 					</h2>
-					<p class="mt-6 text-lg/8 text-gray-400">
+					<p class="mt-6 text-lg/8 text-gray-600">
 						Belcoda is built by a small remote team. If you’re interested in joining us, check out
 						our <a
 							href="https://belcoda.notion.site/Careers-78f34ed4508d46f69a92e5fea15a7e19"
@@ -404,14 +406,14 @@
 							alt="Django Merope"
 							class="aspect-3/2 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-white/10"
 						/>
-						<h3 class="mt-6 text-lg/8 font-semibold text-white">Django Merope</h3>
-						<p class="text-base/7 text-gray-400">Founder & project lead</p>
+						<h3 class="mt-6 text-lg/8 font-semibold text-gray-800">Django Merope</h3>
+						<p class="text-base/7 text-gray-500">Founder & project lead</p>
 						<div class="mt-1 flex items-center gap-x-1 text-gray-500">
 							<MapPinIcon class="inline-block size-4" />
 							<p class="text-sm">Japan</p>
 						</div>
 
-						<p class="mt-4 text-base/7 text-gray-400">
+						<p class="mt-4 text-base/7 text-gray-500">
 							Django has been a campaigner, communications consultant, organizer, and software
 							engineer. He’s worked at the intersection of technology and social change for more
 							than 15 years.
@@ -421,7 +423,7 @@
 								<a
 									href="https://www.linkedin.com/in/dmsynge/"
 									target="_blank"
-									class="text-gray-400 hover:text-gray-300"
+									class="text-gray-400 hover:text-gray-600"
 								>
 									<span class="sr-only">LinkedIn</span>
 									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
@@ -441,13 +443,13 @@
 							alt="Kenneth Lebu"
 							class="aspect-3/2 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-white/10"
 						/>
-						<h3 class="mt-6 text-lg/8 font-semibold text-white">Kenneth Lebu</h3>
-						<p class="text-base/7 text-gray-400">Software engineer</p>
+						<h3 class="mt-6 text-lg/8 font-semibold text-gray-800">Kenneth Lebu</h3>
+						<p class="text-base/7 text-gray-500">Software engineer</p>
 						<div class="mt-1 flex items-center gap-x-1 text-gray-500">
 							<MapPinIcon class="inline-block size-4" />
 							<p class="text-sm">Kenya</p>
 						</div>
-						<p class="mt-4 text-base/7 text-gray-400">
+						<p class="mt-4 text-base/7 text-gray-500">
 							Kenneth is a software engineer with a background working in non-profits and public
 							health organizations.
 						</p>
@@ -456,7 +458,7 @@
 								<a
 									href="https://www.linkedin.com/in/kenneth-lebu"
 									target="_blank"
-									class="text-gray-400 hover:text-gray-300"
+									class="text-gray-400 hover:text-gray-600"
 								>
 									<span class="sr-only">LinkedIn</span>
 									<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5">
@@ -480,12 +482,12 @@
 				<div class="flex items-start justify-center antialiased">
 					<div class="">
 						<h2
-							class="mx-auto max-w-3xl text-center text-4xl font-black tracking-tight text-white uppercase italic sm:text-5xl"
+							class="mx-auto max-w-3xl text-center text-4xl font-black tracking-tight text-gray-900 uppercase italic sm:text-5xl"
 						>
 							Power Tools
 						</h2>
 						<h4
-							class="mx-auto max-w-3xl text-right text-lg font-extralight tracking-tight text-gray-200"
+							class="mx-auto max-w-3xl text-right text-lg font-extralight tracking-tight text-gray-600"
 						>
 							The Belcoda Blog
 						</h4>
